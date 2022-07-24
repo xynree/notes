@@ -24,14 +24,14 @@ This repository compiles all the notes on proramming subjects I've accumulated o
 │       └── Module Notes
 └── subjects
     ├── AWS3
-    ├── Clean Code in React
     ├── Electronics
+    ├── Git
     ├── Javascript
     ├── Misc
     ├── OpenSrc
     ├── Python
     ├── React
-    ├── Remote
+    │   └── Clean Code in React
     ├── Research
     ├── Storage
     ├── Swift
