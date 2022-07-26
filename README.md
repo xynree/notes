@@ -1,5 +1,5 @@
 ## About
-This repository compiles all the notes on proramming subjects I've accumulated over the past few years. Updated regularly.
+This repository compiles all the notes on programming subjects I've accumulated over the past few years. Updated regularly.
 
 ## Directories
 
