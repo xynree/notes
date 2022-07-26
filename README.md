@@ -6,10 +6,11 @@ This repository compiles all the notes on programming subjects I've accumulated 
 ```bash:contents
 ├── books
 │   ├── DSA With Javascript
-│   └── JSInfo
-│       ├── Additional
-│       ├── Browser
-│       └── The Javascript Language
+│   ├── JSInfo
+│   │   ├── Additional
+│   │   ├── Browser
+│   │   └── The Javascript Language
+│   └── The Pragmatic Programmer
 ├── classes
 │   ├── Coding Interview University
 │   │   └── Data Structures
@@ -28,14 +29,15 @@ This repository compiles all the notes on programming subjects I've accumulated 
     ├── Git
     ├── Javascript
     ├── Misc
+    ├── Next
     ├── OpenSrc
     ├── Python
     ├── React
-    │   └── Clean Code in React
     ├── Research
     ├── Storage
     ├── Swift
     ├── Typescript
+    ├── UI:UX
     ├── Webpack
     └── jQuery
 ```
