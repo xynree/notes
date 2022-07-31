@@ -105,3 +105,4 @@
   - Autonomous entities
   - Feedback from decisions important
   - Participants come and go
+  
