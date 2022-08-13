@@ -31,7 +31,6 @@ This repository compiles all the notes on programming subjects I've accumulated 
     ├── Javascript
     ├── Misc
     ├── Next
-    ├── OpenSrc
     ├── Python
     ├── React
     ├── Research
