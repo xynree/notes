@@ -1,1 +1,0 @@
-This folder contains notes about Open Source libraries & their structure. This was an occassional practice I would do to get the feel for reading and understanding unfamiliar source repos.
