@@ -8,10 +8,12 @@ This repository compiles all the notes on programming subjects I've accumulated 
 
 ```bash:contents
 ├── books
+│   ├── Beej's Guide to C Programming
 │   ├── CS:APP
 │   │   └── exercises
 │   ├── DSA With Javascript
 │   ├── Grokking Simplicity
+│   │   └── exercises
 │   ├── JSInfo
 │   │   ├── Additional
 │   │   ├── Browser
