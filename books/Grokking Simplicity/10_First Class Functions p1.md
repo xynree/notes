@@ -49,7 +49,7 @@
 
 - To add logging to any function:
 
-```
+```js
 fn withLog(f) {
   try {
     f();
