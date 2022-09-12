@@ -19,6 +19,7 @@ This repository compiles all the notes on programming subjects I've accumulated 
 │   │   ├── Additional
 │   │   ├── Browser
 │   │   └── The Javascript Language
+│   ├── Mostly Adequate Guide to Functional Programming
 │   └── The Pragmatic Programmer
 ├── classes
 │   ├── Coding Interview University
