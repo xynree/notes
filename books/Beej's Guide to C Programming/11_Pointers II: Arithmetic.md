@@ -114,8 +114,8 @@ int main(void)
 
     printf("%d\n", b[1]);  // 22
 }
-```
-
+**```
+**
 - Copied data and used `sizeof` to tell how many bytes to copy
 - No pointer arithmetic on `void*`
 - Cannot dereference a `void*`
