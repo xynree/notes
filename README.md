@@ -8,6 +8,10 @@ This repository compiles all the notes on programming subjects I've accumulated 
 
 ```bash:contents
 ├── books
+│   ├── About Face The Essentials of Interaction Design
+│   │   ├── 1 - Goal Directed Design
+│   │   ├── 2 - Designing Behavior and Form
+│   │   └── 3 - Interaction Details
 │   ├── Beej's Guide to C Programming
 │   ├── CS:APP
 │   │   └── exercises
@@ -21,6 +25,7 @@ This repository compiles all the notes on programming subjects I've accumulated 
 │   │   └── The Javascript Language
 │   ├── Mostly Adequate Guide to Functional Programming
 │   ├── Software Design For Flexibility
+│   ├── Structure and Interpretation of Computer Programs
 │   └── The Pragmatic Programmer
 ├── classes
 │   ├── Coding Interview University
@@ -50,5 +55,4 @@ This repository compiles all the notes on programming subjects I've accumulated 
     ├── UI:UX
     ├── Webpack
     └── jQuery
-
 ```
