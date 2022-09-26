@@ -8,31 +8,32 @@ This repository compiles all the notes on programming subjects I've accumulated 
 
 ```bash:contents
 ├── books
-│   ├── Beej's Guide to C Programming
-│   ├── CS:APP
-│   │   └── exercises
-│   ├── DSA With Javascript
-│   ├── Design Systems Handbook
-│   ├── Grokking Simplicity
-│   │   └── exercises
-│   ├── JSInfo
-│   │   ├── Additional
-│   │   ├── Browser
-│   │   └── The Javascript Language
-│   ├── Mostly Adequate Guide to Functional Programming
-│   └── The Pragmatic Programmer
+│   ├── Beej's Guide to C Programming
+│   ├── CS:APP
+│   │   └── exercises
+│   ├── DSA With Javascript
+│   ├── Design Systems Handbook
+│   ├── Grokking Simplicity
+│   │   └── exercises
+│   ├── JSInfo
+│   │   ├── Additional
+│   │   ├── Browser
+│   │   └── The Javascript Language
+│   ├── Mostly Adequate Guide to Functional Programming
+│   ├── Software Design For Flexibility
+│   └── The Pragmatic Programmer
 ├── classes
-│   ├── Coding Interview University
-│   │   └── Data Structures
-│   ├── Creative Coding p5
-│   ├── FCC
-│   ├── FSO
-│   ├── OSSU
-│   │   └── Calc 1A
-│   ├── PY4E
-│   └── Thinkful Bootcamp
-│       ├── Mock Interviews
-│       └── Module Notes
+│   ├── Coding Interview University
+│   │   └── Data Structures
+│   ├── Creative Coding p5
+│   ├── FCC
+│   ├── FSO
+│   ├── OSSU
+│   │   └── Calc 1A
+│   ├── PY4E
+│   └── Thinkful Bootcamp
+│       ├── Mock Interviews
+│       └── Module Notes
 └── subjects
     ├── AWS3
     ├── Electronics
@@ -49,4 +50,5 @@ This repository compiles all the notes on programming subjects I've accumulated 
     ├── UI:UX
     ├── Webpack
     └── jQuery
+
 ```

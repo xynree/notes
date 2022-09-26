@@ -45,7 +45,7 @@ int main(void)
 }
 ```
 
-### 13.1.2 Variable HIding
+### 13.1.2 Variable Hiding
 
 - If there is a variable name d te same thing at an inner scope as one at outer scope, the one in inner scope takes precedence
 
