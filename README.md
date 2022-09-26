@@ -1,6 +1,4 @@
-# Programming Notes (Dump)
-
-## About
+# About
 
 This repository compiles all the notes on programming subjects I've accumulated over the past few years. Updated regularly.
 
