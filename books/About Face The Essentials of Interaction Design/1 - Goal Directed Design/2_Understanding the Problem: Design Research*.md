@@ -84,5 +84,5 @@
 
 - Customer/User Interviews
   - Customer: People who decide to purchase products. OFten very different from user: executive or IT manager with distinct needs
-  - P?roduct must be viable
+  - Product must be viable
   - Customers often seldom use product themselves
