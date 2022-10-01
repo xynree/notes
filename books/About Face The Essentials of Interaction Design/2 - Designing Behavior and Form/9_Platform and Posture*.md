@@ -93,7 +93,16 @@ _Remember User Choices_
 
 ## Postures For the Web
 
+- Three basic categories: informational, transactional, web app
+
 ### Informational Websits
+
+- Way to view shared and linked documents
+- Ssequential/hierarchical sets of documents
+- Consist of a navigation model to take users from one page to another plus search
+- Exist today in the form of personal sites, marketing, support, and information centric
+  - Wikipedia
+- Biggest issue: Findability
 
 ### Transactional Websites
 
@@ -102,4 +111,4 @@ _Remember User Choices_
 - Heavily interactive, similar to robust desktop applications
 - Examples: Google Docs, Facebook, Hulu
 
-_Sovereigh Web Applications_
+_Sovereign Web Applications_
