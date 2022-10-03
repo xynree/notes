@@ -181,11 +181,11 @@
   - Dunbar's Number - 150 tribe # limit
   - Communities of practice - afford permissions depending on role and seniority
 
-### Repsect others' privacy
+### Respect others' privacy
 
 - Make additional sharing a carefully explained, opt-in affair
 
-### Deal appropriately with the anti=social
+### Deal appropriately with the anti-social
 
 - Provide tools to silence trolls and report them to community caretakers
 - Help caretakers distinguish trolls from those who are earnest but unpopular
