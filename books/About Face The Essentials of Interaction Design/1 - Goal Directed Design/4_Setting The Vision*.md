@@ -55,17 +55,44 @@
 
 ## Design Requirements: The "What" of Interaction
 
+- Determine the "what" of the design: What info and capabilities our rpersonas require to accomplish goals
+- Define and agree on the what before we can move on to the "how"
+- Proposing solutions without clearly defining and agreeing to problems lead to unobjective results - I like, you like
+
 ### Design requirements aren't features
+
+- Design requirements are instead synonymous with `needs` - define human and business needs that must be satisfied
 
 ### Design requirements aren't specifications
 
+- Marketing/Product requirement documents can confuse `what` of product with `how`
+  - Don't presuppose solutions that could be inappropriate for users/workflows
+  - Requirements documents are of little use to business stakeholders or developers
+  - Designers are needed to visualize contents of lists
+
 ### Design Requirements are Stretegic
+
+- By clearly defining user needs, enables finding best solutions without compromising product's ability to help people
 
 ### Design requirements come from Multiple Sources
 
+- Business Needs, technical, legal constraints are gathered during interviews that will factor into design
+
 ## The Requirements Definition Process
 
+![picture 1](https://s2.loli.net/2022/10/07/RHBG8J6r5ZIADms.png)  
+
+- Requirement Definition = Broad questions about what a product is and what it should do
+- Framework Definition = Answers questions about how a product behaves and how it is structured to meet user goals
+
 ### Step 1: Create Problem and Vision Statements
+
+- Problem statment = defines purpose of design initiative
+  - Example: “Company X’s customer satisfaction ratings are low. Market share has diminished by 10 percent over the past year because users have inadequate tools to perform tasks X, Y, and Z that would help them meet their goal of G.”
+- Vision statement: High level design objective or mandate
+  - Example: “The new design of Product X will help users achieve G by allowing them to do X, Y, and Z with greater [accuracy, efficiency, and so on], and without problems A, B, and C that they currently experience. This will dramatically improve Company X’s customer satisfaction ratings and lead to increased market share.”
+- Contents come directly from research and user models
+- Useful when redesigning existing products
 
 ### Step 2: Explore and Brainstorm
 
