@@ -96,20 +96,75 @@
 
 ### Step 2: Explore and Brainstorm
 
+- Try to create context scenarios without prejudgements about solutions
+- Record/get ideas out of head. Eliminate as much preconception as possible
+- Cherry-pick exploratory concepts to share with clients in order to discover their mood for creative solutions
+- A few hours to a couple days is more than sufficient - don't spend too much time
+
 ### Step 3: Identify persona expectations
+
+- Important for represented model to match users' mental models
+- Represented model should not reflect the impklementation model (technical model)
+- Record expectations:
+  - Attitudes, experiences, aspirations, other factors that influence expectations
+  - General expectations and desires persona mya have about experience of using proeuct
+  - Behaviors persona expects/wants
+  - How persona thinks about basic elements of units of data
+  - What do interview subjects mention first?
+  - Which action words are used? Which nouns?
+  - Which intermediate steps, tasks, etc are not mentioned?
 
 ### Step 4: Construct context scenarios
 
+- Tells the story of a particular user persona
+- establish touch points that each persona has with the system over a length of time
+- Broad and shallow in scope
+
+![picture 1](https://s2.loli.net/2022/10/09/Xi4saroF2EUdjKV.png)  
+
+- Entirely textual, should not represent product behaviors as they are
+
 #### A Sample context scenario
+
+![picture 2](https://s2.loli.net/2022/10/09/9YZMz4idBj17Cb6.png)  
+
+- Hgh level, not specific about interface or technologies
+- Optimal yet still feasible experience
+- Activieis tie back to goals, tryuing to eliminate tasks
 
 #### Pretending it's magic
 
+- If persona has goals and produuct has magiv powers to meet them, how simple could the interaction be?
+- Helps designers think outsie the box
+
 ### Step 5: Identify Design requirements
 
-#### Data Requirements
+- Using context scenario, analyze it to extract persona needs or design requirements
+  - objects
+  - actions
+  - context
+
+#### Data Requirements (Object)
+
+- Objectas and info that must be represented in the system
+- Objects and adjuectives related to those objects
 
 ### Functional requirements
 
+- operations or actions performed on objects
+- Translated to inerface control
+- Product actions
+
 ### Contextual Requirements
 
+- Relationships/dependencies between sets of objects in the system
+- Include which objects in system need to be displayed together
+- Considerations regarding physical environment product used in
+- Skills/capabilities of personas using the product
+
 ### Other requirements
+
+![picture 3](https://s2.loli.net/2022/10/09/odxmyrkMzwaeqhK.png)  
+
+- Get idea of requirements of business and tech you are designing for
+- Design requirements provide design/dev direction and provide scope of work to communicate to stakeholders
