@@ -34,9 +34,14 @@ This repository compiles all the notes on programming subjects I've accumulated 
 │   ├── OSSU
 │   │   └── Calc 1A
 │   ├── PY4E
-│   └── Thinkful Bootcamp
-│       ├── Mock Interviews
-│       └── Module Notes
+│   ├── Thinkful Bootcamp
+│   │   ├── Mock Interviews
+│   │   └── Module Notes
+│   └── go_tour
+│       ├── 1_Basics
+│       │   └── examples
+│       ├── 2_Methods and Interfaces
+│       └── Concurrency
 └── subjects
     ├── AWS3
     ├── Electronics
