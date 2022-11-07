@@ -55,3 +55,52 @@ fmt.Println(p.Abs()) // OK
   - If concrete values inside interfaces are nil, method called with nil receiver
 - Nil interface holds neither value or concrete type
   - Calling a method on nil causes a runtime error
+- Empty interface
+  - emtpy interface `interface{}` specifies zero methods
+  - May hold values of any type
+  - Used by code that handles values of unknown type (like Typescript `T`)
+
+## Type Assertions
+
+- Provide access to an interface value's underlying concrete value
+
+`t := i.(t)`
+
+- interface value `i` holds concrete type `T` and assigns underlying `T`value to variabe `t`
+- to test whether interface holds specific type, type assertion can return 2 values: underlying value and a bool that reports whether assertion succeeded
+`t, ok := i.(T)`
+- t = underlying value, `ok` = `true` . if `i` holds a `T`
+
+## Type Switches
+
+- Permits several type assertions in a series
+- Like a regular switch statement but cases specify types
+- Same syntax as type assertion but specific type `T` repalced with keyword `type`
+
+## Stringers
+
+```go
+type Stringer interface {
+  String() string
+}
+```
+
+- A type that can describe itself as a string
+
+## Errors
+
+- Error states use `error` values
+- Built in interface similar to `fmt.Stringer`
+
+```go
+type error interface {
+  Error() string
+}
+```
+
+- test whether `error` value equals `nil`
+
+## Readers
+
+- `io` package specifies `io.Reader` interface to read streams of data
+- `Read` method populates given byte slice with data, returning number of bytes populated and an error value. Returns `io.EOF` when stream ends
