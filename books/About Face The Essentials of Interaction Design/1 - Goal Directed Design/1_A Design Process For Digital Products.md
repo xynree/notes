@@ -1,23 +1,23 @@
 # 1 - A Design Process For Digital Products
 
-- If we design and develop digital products in a way so people who use them can achieve goals, they will be happy.
+- If we design & develop digital products so people who use them can achieve their goals, they will be happy :)
 - Design: Conscious and intuitive effort to impose meaningful order
-  - Understanding desires,need,motivations,and contexts of users
+  - Understanding desires, need, motivations, and contexts of users
   - Understanding business, technical, and domain opportunities
-  - Usingk nowledge as foundation for plans to create products that are useful, usable, desirable, and feasible
+  - Using knowledge as foundation for plans to create products that are useful, usable, desirable, and feasible
 
 ## Consequences of Poor Product Behavior
 
 - Digital products are rude
-  - Blame users for making mistakes that are not their fault
+  - Blame users for making mistakes that aren't their fault
   - Interrogate users
 - Require people to think like computers
   - Assume people are technology literate
   - Hide meaning, intentions, and actions from users
 - Have sloppy habits
-  - Requires us to step out of main flow of tasks to perform functions that shouldn't require separate interfaces and extra navigation to access
-- Require humans to do the heavy lifting
-  - Manually copying, pasting, pulling widndows and widgets around on screen...
+  - Makes us step out of the flow of tasks to do things that shouldn't require separate interfaces or extra navigation to access
+- Require humans do the heavy lifting
+  - Manually copying, pasting, pulling windows and widgets around on screen
 
 ## Why Digital Products Fail
 
@@ -29,15 +29,15 @@
     - Poor product vision = products that irritate rather than please
     - Core design process should precede coding and testing
   - Ignorance about real users and needs
-    - How to make users happy?How will they actually use product?
-  - Conflicts of Interest (dev teams do both designing and building UI)
-    - Ease of coding vs. ease of code is a conflict of interest
+    - How to make users happy? How will they actually use product?
+  - Conflicts of Interest (when dev teams do both designing and building UI)
+    - Ease of coding is a conflict of interest
     - Isn't possible for developer to advocate effectively for user, business, and technology all at the same time
   - Lack of a design process
     - Repeateable, predictable, and analytical process for ensuring _desirability_
     - Confusing domain knowledge with design knowledge: Customers often cannot visualize solution to problems
 
-## Planning and Designing PProduct Behavior
+## Planning and Designing Product Behavior
 
 - Requires upfront effort by professional designers
 - Design was introduced to consumer products as a means to increase desire for product
@@ -46,7 +46,7 @@
   - Viability
   - Desirability
 - Design of behavior is a problem that requires greater knowledge of context
-  - Most important: Understanding how user wants to user products
+  - Most important: Understanding how user wants to use products
 
 ![picture 2](https://s2.loli.net/2022/09/26/DqpUz48sPFlBrQI.png)  
 
@@ -58,8 +58,11 @@
 
 ## Goals versus tasks and activities
 
-- Goals are not the same as tasks or activities: Goal is expectation, activities/tasks are steps
-- Hierarchy: Activities -> Made of Tasks -> Made of Actions -> Made of Opertaions (ACD Activity-Centered Design). Focus on understanding human activities
+- Goals are not the same as tasks or activities
+  - Goal is expectation
+  - Activities/tasks are steps
+- Hierarchy
+  - Activities -> Tasks -> Actions -> Opertaions (ACD Activity-Centered Design). Focus on understanding human activities
   - Activity Theory - Soviet-era theory of psychology: understanding who people are by how they interact with the world
 - Does not seem to ask _why?_ just _what?_
 - Understanding goals allows you to understand expectations and aspirations
@@ -74,7 +77,7 @@
 
 ## Implementation Models and Mental Models
 
-- Computer literacy = forcing humans to understand application logic, rather than having software stretch to meet people's usual ways of thinking
+- Computer Literacy = forcing humans to understand application logic, rather than having software stretch to meet people's usual ways of thinking
 - Implementation Models
   - Computers use algorithms and modules of code to communicate (system/implementation model)
   - Easy to design software that reflects implementation model
@@ -94,36 +97,48 @@
 - Most methods don't provide means of translating research into design solutions
 - Bridging the Gap
   - Design provides true product definition, based on user goals, business needs, and tech restraints
-  - Designers as researchers: Designer empathy
+  - Designers are researchers and need Dempathy
 - Between research and blueprint: Models, requirements, frameworks
-  - Designers often have to reply on third-person accounts of behaviors and desires
+  - Designers often have to rely on third-person accounts of behaviors and desires
   - Methods generally provide info at task level, not useful for defining basic framework of what a product is, what is does, and how to meet needs
   - Need explicit, systematic process to bridge the gap
 
 ![picture 5](https://s2.loli.net/2022/09/27/n5auZ4yKeEH8zFV.png)  
 
-- Process Overview: Six Phases
-  - Research
-    - Observation/Contextual interviews
-    - Emergent set of behavior patterns suggesting goals and motivations
-    - Creation of Persons in Modeling phase to select and filter valid personas
-  - Modeling
-    - Synthesizing domaina nd user models with information flow and work flow diagrmas
-    - User archetypes make groupings of behaviors, attitudes, aptitudes, goals, and motivations
-    - Iteratively generates design concepts in Framework Definition. Provides feedback that enforces design coherence and appropriateness
-  - Requirements
-    - Employs scenario-based design methods
-    - Each interface/persona gets analyzed in context scenarios, describing high level product touch points, and then defining detail at depths
-    - Requirements definition
-  - Framework Definition
-    - Overall product concept
-    - Interaction Framework using interaction design principles and interaction design patterns
-    - Outcome: Interaction Framework Definition
-      - A balance of top-down design and bottom-up design
-    - Interaction designers and industrail desginers collaborate on input methods and form factors, drafting service map and blueprints
-    - Visual interface desginers produce options for visual framework (Visual Language Strategy)
-- Refinement
-  - Increasing Focus on Detail and Implementation
-    - Task Cohernce, Key Path Scenarios, Validation Scenarios
-    - Detailed docuemntation of design blueprint
-- Goals, not features, are the keys to product success
+## Process Overview: Six Phases
+
+### Research
+
+- Observation/Contextual interviews
+- Emergent set of behavior patterns suggesting goals and motivations
+- Creation of Persons in Modeling phase to select and filter valid personas
+
+### Modeling
+
+- Synthesizing domain and user models
+  - Using Information flow & workflow diagrmas
+- User archetypes set up groupings of behaviors, attitudes, aptitudes, goals, and motivations (as boundaries)
+- Iteratively generate design concepts in Framework Definition. Provides feedback that enforces design coherence and appropriateness
+
+### Requirements
+
+- Employs scenario-based design methods
+- Each interface/persona gets analyzed in context scenarios, describing high level product touch points, and then defining detail at depths
+- Requirements definition
+
+### Framework Definition
+
+- Overall product concept
+- Interaction Framework using interaction design principles and interaction design patterns
+- Outcome: Interaction Framework Definition
+  - A balance of top-down design and bottom-up design
+- Interaction designers and industrial desginers collaborate on input methods and form factors, drafting service map and blueprints
+- Visual interface designers produce options for visual framework (Visual Language Strategy)
+
+### Refinement
+
+- Increasing Focus on Detail and Implementation
+  - Task Coherence, Key Path Scenarios, Validation Scenarios
+  - Detailed docuemntation of design blueprint
+
+### Goals, not features, are the keys to product success
