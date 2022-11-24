@@ -104,3 +104,7 @@ type error interface {
 
 - `io` package specifies `io.Reader` interface to read streams of data
 - `Read` method populates given byte slice with data, returning number of bytes populated and an error value. Returns `io.EOF` when stream ends
+
+## Images
+
+- `image` package defines `Image` interfaces
