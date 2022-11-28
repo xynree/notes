@@ -1,35 +1,33 @@
-## 2 - Understanding the Problem: design Research
+## 2 - Understanding the Problem: Design Research
 
-- Outcomes of design effort judged by how successfully it meets needs of users and organization that commissioned it
+- Outcomes of design effort judged by how successfully meets needs of users and organization
 - Gathered via qualitative research techniques
 
 ## Qualitative versus Quantitative Data
 
-- Quantitative research = answers "how much" or "how many"
-- Qualitative REsearch - what, how, and why
-- Benefits of qualitative methods
-
-- Helps understand:
-  - behaviors, attitudes, aptitutudes
-  - techincal business and environmental contexts (domain)
+- Quantitative Research = "how much"? "how many"
+- Qualitative Research - what, how, and why
+- Qualitative methods help understand:
+  - behaviors, attitudes, aptitudes
+  - technical business and environmental contexts (domain)
   - vocabulary
   - how existing products are used
 - Helps progress designs:
-  - Gives deisgn teams credibility
+  - Gives design teams credibility
   - Gives team common understanding of domain issues
   - Empowers management to make more informed decisions about design issues
 - Can also provide business insights not revealed through traditional market research
 
-- Strengths of Limitations of Quantitative Methods
+- Strengths & Limitations of Quantitative Methods
 
-- Market segmentation - determines what type of consumers most receptive to products or marketing messages
+- Market segmentation - determines what type of consumers are most receptive to products or marketing messages
 - Classification systems better clarify data
 - Understanding if someone wants to buy something !== Understanding what they want to do with it after buying
-  - Good for identifying and quantifying market opportuntieis, bad for defining product that will capitalize on it
+  - Good for identifying and quantifying market opportunties, bad for defining product that will capitalize on it
 
 - Quantitive reserach can help direct design research
   - Data usage analystics help identify design problems that need solutions
-- User reserach can inform market research
+- User research can inform market research
 
 ![picture 6](https://s2.loli.net/2022/09/28/ZU7AgwmYF5aMeLu.png)  
 
@@ -83,6 +81,6 @@
   - Want SME expert throughout design process
 
 - Customer/User Interviews
-  - Customer: People who decide to purchase products. OFten very different from user: executive or IT manager with distinct needs
+  - Customer: People who decide to purchase products. Often very different from user: executive or IT manager with distinct needs
   - Product must be viable
   - Customers often seldom use product themselves
