@@ -63,7 +63,7 @@
   - "Design is a conversation with materials"
     - Must understand capabilities and limitations of the materials used to construct the product. Talk to people responsible for managing and building product
   - Stakeholder = anyone with authority and/or responsibility for product being designed
-  - Execs, amngagers, product management, design, useability
+  - Execs, managers, product management, design, useability
   - Prelim product vision - harmonizsing perspectives with those of users and customers
   - Budget and schedule - scope of design effort
   - Technical constraints and opportunities
