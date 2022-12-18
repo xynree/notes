@@ -132,3 +132,93 @@
 
 - Remaking `represented model` according to users' mental models will help users become more effective
 - We can structure commands in application according to users' goals
+
+## Rethinking Data Retrieval
+
+- How do we make it easy for people to find what they're looking for and what they need?
+- Solution starts with good understading of users' mental models and usage contexts
+
+### Storage versus retrieval
+
+- Storage system = method of keeping things in a repository
+- Retrieval system = method of finding things in a repository according to some associated value
+- Traditionally based in "folders" or "directories" concept
+- Metaphorical nature of this pattern is limiting: requires users know where an item has been stored in order to locate it
+
+### Retrieval in the physical world
+
+#### Retrieval by location
+
+- Remembering address of where we put something is vital to finding it and putting it away again
+- We don't find objects by referring to characteristics of the object or by association
+- In this model = storage system is = retrieval system: based on remembering locations
+
+#### Indexed Retrieval
+
+- Limited in scale by human memory
+- In real libraries, use classification systems
+- How to discover # for a given book ? Use the `index`. Allows to find location by looking up an attribute of the item
+- physically retrieve book but logically find the book by participating in system of retrieval
+  
+### Retrieval in the digital world
+
+- We often ignore the abilitiy to add indices to files on disk
+- Failure due to interdependence of files and organizational systems
+- We've failed at designing good disk file retrieval systems for humans
+
+#### Digital retrieval methods
+
+- Three fundamental ways to find a document in a digital system:
+  - Positional Retrieval: Remembering where you left it
+  - Identity Retrieval: Remembering its identifying name
+  - Associative/Attribute-Based Retrieval: Based on ability to search through some quality of the document itself
+- Most systems do not provide an associative method for storage
+
+#### Attribute-based retrieval systems
+
+- Enable users to find docuements by contents and meaningful properties
+- Provide a way for users to express what they're looking for according to how they think about it
+- Enables users to find by synonyms or related topics
+- System can remember certain things for the user:
+  - User that created document
+  - Device createed
+  - Document's contents and type
+  - Which application last opened
+  - Doc size and whether it is large or small
+  - Whether doc has been untouched for a long time
+  - How long doc was last open
+  - How much info added or deleted during last edit
+  - Was doc created from scratch?
+  - Is doc frequently edited? Frequently viewed but rarely edited?
+  - Whether doc has been printed, how often, and where - same for fax and email
+- Also value in allowing users to tag or manually specify attributes about documents
+
+### Relational databases versus digital soup
+
+- 2 facts about human users: can rarely express what they want, and more often than not they change their minds
+
+#### Organizing the unorganizable
+
+- We can't define info in advance or stick to any definition we might conjure up
+
+#### Problems with Databases
+
+- All records are of single type and all instances are grouped
+- Must be able to add and change identity at will even after record is stored
+
+#### The attribute-based alternative
+
+- Separating storage and retrieval systems
+- Storage facility - digital soup where we put records
+- Attribute based retrieval: Create index that stores key values along with tokens
+  - Can create infinite number of indices, each one with its own key and copy of token
+- 2 components: System must be able to messages and automatically extract and index information, system must make it easy for user to add ad hoc pointers to messages
+
+#### Constrained natural-language output
+
+- Requires a fronte end that allows users to make sense of what could be complex and related sets of attributes
+- Constrained natural-language output: app provides array of boudned controls for users to choose from
+
+![picture 1](https://s2.loli.net/2022/12/18/8X1NsxnT9gIZFSD.png)  
+
+- Hard to program but readable and intuitive for users
