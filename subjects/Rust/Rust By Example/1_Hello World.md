@@ -15,7 +15,6 @@
 
 - comments: Rust uses `// Line comments` and `/* block comments */` (Regular Comments), and Doc comments (parsed into HTML library doc): `/// Generate lib docs for following item` or `//! Gen library docs for enclosing item`
   - Doc comments get compiled and support markdown when running `rustdoc`. Support inline links as well
-  -
 
 ## 1.2 Formatted Print
 

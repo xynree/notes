@@ -6,42 +6,40 @@ This repository compiles all the notes on programming subjects I've accumulated 
 
 ```bash:contents
 ├── books
-│   ├── About Face The Essentials of Interaction Design
-│   │   ├── 1 - Goal Directed Design
-│   │   ├── 2 - Designing Behavior and Form
-│   │   └── 3 - Interaction Details
-│   ├── Beej's Guide to C Programming
-│   ├── CS:APP
-│   │   └── exercises
-│   ├── DSA With Javascript
-│   ├── Design Systems Handbook
-│   ├── Grokking Simplicity
-│   │   └── exercises
-│   ├── JSInfo
-│   │   ├── Additional
-│   │   ├── Browser
-│   │   └── The Javascript Language
-│   ├── Mostly Adequate Guide to Functional Programming
-│   ├── Software Design For Flexibility
-│   ├── Structure and Interpretation of Computer Programs
-│   └── The Pragmatic Programmer
+│   ├── About Face The Essentials of Interaction Design
+│   │   ├── 1 - Goal Directed Design
+│   │   ├── 2 - Designing Behavior and Form
+│   │   └── 3 - Interaction Details
+│   ├── Beej's Guide to C Programming
+│   ├── CS:APP
+│   ├── DSA With Javascript
+│   ├── Design Systems Handbook
+│   ├── Grokking Simplicity
+│   ├── JSInfo
+│   │   ├── Additional
+│   │   ├── Browser
+│   │   └── The Javascript Language
+│   ├── Mostly Adequate Guide to Functional Programming
+│   ├── Software Design For Flexibility
+│   ├── Structure and Interpretation of Computer Programs
+│   └── The Pragmatic Programmer
 ├── classes
-│   ├── Coding Interview University
-│   │   └── Data Structures
-│   ├── Creative Coding p5
-│   ├── FCC
-│   ├── FSO
-│   ├── OSSU
-│   │   └── Calc 1A
-│   ├── PY4E
-│   ├── Thinkful Bootcamp
-│   │   ├── Mock Interviews
-│   │   └── Module Notes
-│   └── go_tour
-│       ├── 1_Basics
-│       │   └── examples
-│       ├── 2_Methods and Interfaces
-│       └── Concurrency
+│   ├── Coding Interview University
+│   │   └── Data Structures
+│   ├── Creative Coding p5
+│   ├── FCC
+│   ├── FSO
+│   ├── OSSU
+│   │   └── Calc 1A
+│   ├── PY4E
+│   ├── Thinkful Bootcamp
+│   │   ├── Mock Interviews
+│   │   └── Module Notes
+│   └── go_tour
+│       ├── 1_Basics
+│       ├── 2_Methods and Interfaces
+│       ├── 3_Generics
+│       └── 4_Concurrency
 └── subjects
     ├── AWS3
     ├── Electronics
@@ -52,6 +50,8 @@ This repository compiles all the notes on programming subjects I've accumulated 
     ├── Python
     ├── React
     ├── Research
+    ├── Rust
+    │   └── Rust By Example
     ├── Storage
     ├── Swift
     ├── Typescript
