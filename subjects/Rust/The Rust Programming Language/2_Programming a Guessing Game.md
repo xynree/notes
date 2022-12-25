@@ -6,7 +6,7 @@
 - Create a new program with `cargo new guessing_game`
 - Processing a guess: Allow user to input a guess
 
-```rs
+```rust
 use std::io; // std::io library
 
 fn main() {
@@ -39,7 +39,7 @@ Updating a Crate
 
 Generating a Number
 
-```rs
+```rust:generating-a-number
 use rand::Rng;
 use std::io;
 
@@ -68,7 +68,7 @@ fn main() {
 
 Comparing a Guess to the Secret Number
 
-```rs
+```rust
 use rand::Rng;
 use std::cmp::Ordering;
 use std::io;
@@ -98,7 +98,7 @@ fn main() {
 
 Allowing Multiple Guesses with Looping
 
-```rs
+```rust
     // --snip--
 
     println!("The secret number is: {secret_number}");
@@ -124,7 +124,7 @@ Handling Invalid Input
 
 - Make game ignore non-numbers by handling the `parse()` value instead of running `expect`:
 
-```rs
+```rust
           // --snip--
 
         io::stdin()

@@ -34,7 +34,7 @@ Memory and Allocation
   - Need a way to free memory when we're done
 - Memory is automatically returned once variable that owns it goes out of scope
 
-```rs
+```rust
 
 {
   let s = String::from("hello") // s is valid from this point forward
@@ -65,7 +65,7 @@ Variables and Data Interacting with Clone
 
 - If we want to deeply copy the heap data, we use a method called `clone`
 
-```rs
+```rust
 let s1 = String::from("hello");
 let s2 = s1.clone();
 ```
@@ -80,7 +80,7 @@ Ownership and Functions
 
 - Passing a variable to a fn will move or copy
 
-```rs
+```rust
 fn main() {
     let s = String::from("hello");  // s comes into scope
 
@@ -116,7 +116,7 @@ Return Values and Scope
 
 - `Reference` is like a pointer in that it's an address we can follow to access data, but dsata is owned by other variable
 
-```rs
+```rust
 fn main() {
   let s1 = String;:from("hello");
   let len = calculate_length(&s1);
@@ -141,7 +141,7 @@ Mutable References
 - If there is a mutable reference, there can be no other references to the value.
 - We can use brackets to create a new scope, enforcing multiple `mut &`, just not simultaneously.
 
-```rs
+```rust
     let mut s = String::from("hello");
 
     {
@@ -160,7 +160,7 @@ Dangling References
 - References a contiguous sequence of elements in a collection
 - Does not have ownership
 
-```rs
+```rust
 
 fn first_word(s:&String) -> usize {
   let bytes = s.as_bytes(); // convert string to array of bytes
@@ -183,7 +183,7 @@ String Slices
 - reference to a portion of string, ending non inclusive
 - if 0, can drop the 0 value
 
-```rs
+```rust
 // . adjusted to return a slice
 fn first_word(s: &String) -> &str {
   let bytes = s.as_bytes();

@@ -47,5 +47,3 @@ function selectionSort() {
 ```
 
 # Insertion Sort
-
-- 

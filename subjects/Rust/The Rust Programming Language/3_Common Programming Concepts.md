@@ -81,7 +81,7 @@ Functions With Return Values
 - declare type of return value after the argument parans with an arrow (->)
 - return value == value of the final expression in the block of the fn body
 
-```rs
+```rust
 fn five() -> i32 {
   5
 }
@@ -98,7 +98,7 @@ fn five() -> i32 {
 
 - syntax:
 
-```rs
+```rust
 if number < 5 {
   println!("true"); 
 } else {
@@ -120,7 +120,7 @@ Repetition with Loops
   - `continue` skips over rest of loop and goes to next iteration
 - Returning /Values from loops
 
-```rs
+```rust
 let result = loop {
   ...
 }
@@ -134,7 +134,7 @@ while number != 0 {
 
 Looping Through a collection with `for`
 
-```rs
+```rust
 for element in a {
   ...
 }
@@ -142,7 +142,7 @@ for element in a {
 
 - Can use a range for the for loop:
 
-```rs
+```rust
 for num in (1...4) {
   ...
 }

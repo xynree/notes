@@ -8,7 +8,7 @@
 - Pieces of struct can be different types
 - Each piece of data is named
 
-```rs
+```rust
 struct User {
   active: bool,
   username: String,
@@ -19,7 +19,7 @@ struct User {
 
 - To use a struct, create an instance by specifying concrete values for each field
 
-```rs:instance-of-a-struct
+```rust:instance-of-a-struct
 let user1 = User {
   email: String::from ("..."),
   username: String::from("..."),
@@ -34,7 +34,7 @@ let user1 = User {
 
 Using the Field init Shorthand
 
-```rs:init-shorthand
+```rust:init-shorthand
 User {
   email,
   username,
@@ -47,7 +47,7 @@ Creating Instances From Other Instances With Struct Update Syntax
 
 - Struct update syntax: Create new instance of struct that includes most values of another instance but changes some
 
-```rs:no-update-syntax
+```rust:no-update-syntax
 fn main(){
   let user2 = User {
     active: user1.active,
@@ -60,7 +60,7 @@ fn main(){
 
 Using Struct Update syntax:
 
-```rs:struct-update-syntax
+```rust:struct-update-syntax
 fn main() {
   // --
   let uer2 = User {
@@ -80,7 +80,7 @@ Using Tuple Structs without Named Fields to Create Different Types
 - Just have types of fields, no name
 - Useful for giving the whole tuple a name
 
-```rs:tuple-struct
+```rust:tuple-struct
 struct Color(i32, i32, i32);
 struct Point(i32,i32,i32);
 
@@ -96,7 +96,7 @@ Unit-Like Structs Without any Fields
 
 - Behave similarly to `()` - Useful to implement a trait on some type but don't have data you want to stroe in the type itself
 
-```rs:unit-like-struct
+```rust:unit-like-struct
 struct AlwaysEqual;
 fn main() {
   let subject = AlwaysEqual;
@@ -115,7 +115,7 @@ Ownership of Struct Data
 
 - Example: Program that calculates area of rectangle
 
-```rs:main
+```rust:main
 fn main() {
     let width1 = 30;
     let height1 = 50;
@@ -136,7 +136,7 @@ fn area(width: u32, height: u32) -> u32 {
 
 Refactoring with Tuples
 
-```rs
+```rust
 fn main() {
     let rect1 = (30, 50);
 
@@ -155,7 +155,7 @@ fn area(dimensions: (u32, u32)) -> u32 {
 
 Refactoring with Structs
 
-```rs
+```rust
 struct Rectangle {
     width: u32,
     height: u32,
@@ -183,7 +183,7 @@ fn area(rectangle: &Rectangle) -> u32 {
 
 Adding Useful Functionality with Derived Traits
 
-```rs
+```rust
 struct Rectangle {
     width: u32,
     height: u32,
@@ -202,7 +202,7 @@ fn main() {
 - Print line won't work because `Rectangle` doesn't implement println!.
 - Instead, we can use `Debug` mode, after adding `#[derive(Debug)]` over our struct to implement print.
 
-```rs
+```rust
 #[derive(Debug)]
 struct Rectangle {
     width: u32,
@@ -223,7 +223,7 @@ fn main() {
 - we can also use `dbg!` macro which takes ownership rather than reference
 - Prints to the `stderr` rather than `stdout`
 
-```rs
+```rust
 #[derive(Debug)]
 struct Rectangle {
     width: u32,
@@ -247,7 +247,7 @@ fn main() {
 
 Defining Methods
 
-```rs
+```rust
 #[derive(Debug)]
 struct Rectangle {
     width: u32,
@@ -281,7 +281,7 @@ fn main() {
   - Methods must have a pram named `&self` of type `Self` for their first param.
 - Can reuse names from methods/properties
 
-```rs:reused-name
+```rust:reused-name
 #[derive(Debug)]
 struct Rectangle {
     width: u32,
@@ -312,7 +312,7 @@ fn main() {
 
 Methods with More parameters
 
-```rs
+```rust
 fn main() {
     let rect1 = Rectangle {
         width: 30,
@@ -338,7 +338,7 @@ Associated Functions
 - We can defined functions that don't have `self` as their first parameter because they don't need an instance of the type to work with
 - Often used for Constructors and sometimes called `new`
 
-```rs:associated-functions
+```rust:associated-functions
 #[derive(Debug)]
 struct Rectangle {
     width: u32,

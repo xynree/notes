@@ -11,7 +11,7 @@
 
 - Anatomy of A rust Program
 
-```rs
+```rust
 fn main() {
   println!("Hello, world!");
 }
