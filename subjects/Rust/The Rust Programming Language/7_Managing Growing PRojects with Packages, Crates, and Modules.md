@@ -31,3 +31,43 @@
 - `main.rs` not listed in `Cargo.toml` (Cargo has main.rs as the convention)
 - `lib.rs` same for library crates
 - Package can have multiple binary crates by placing files in the `src/bin` directory
+
+## 7.2 - Defining modules to Control Scope and Privacy
+
+- How modules, paths, and pub work in the copiler:
+  - Compiler first looks in the crate root
+  - In crate root, declare new modules
+    - Compiiler looks for module code:
+      - Inline with {}
+      - In file sr./garden/rs
+      - In file src/garden/mod.rs
+  - Declaring Submodules
+    - In any file other than crate root, can declare submodules
+  - Paths to code in modules
+    - Once a module is part of crate, refer to code in that module from anywhere else in the same crate, using path to the code
+      - `crate::garden:;vegetables::Asparagus`
+  - Within scope, the `use` keyword creates shortcuts to reduce repition of long paths
+- Grouping related Code in modules
+  - Modules allow us to organize code within a crate
+
+```rust
+mod front_of_house {
+    mod hosting {
+        fn add_to_waitlist() {}
+
+        fn seat_at_table() {}
+    }
+
+    mod serving {
+        fn take_order() {}
+
+        fn serve_order() {}
+
+        fn take_payment() {}
+    }
+}
+```
+
+- Can group related definitions together and name why they're related
+
+## 7.3 Paths for Referring to an Iterm in the Module Tree
