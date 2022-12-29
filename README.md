@@ -20,9 +20,11 @@ This repository compiles all the notes on programming subjects I've accumulated 
 │   │   ├── Browser
 │   │   └── The Javascript Language
 │   ├── Mostly Adequate Guide to Functional Programming
+│   ├── Rust By Example
 │   ├── Software Design For Flexibility
 │   ├── Structure and Interpretation of Computer Programs
-│   └── The Pragmatic Programmer
+│   ├── The Pragmatic Programmer
+│   └── The Rust Programming Language
 ├── classes
 │   ├── Coding Interview University
 │   │   └── Data Structures
@@ -51,7 +53,6 @@ This repository compiles all the notes on programming subjects I've accumulated 
     ├── React
     ├── Research
     ├── Rust
-    │   └── Rust By Example
     ├── Storage
     ├── Swift
     ├── Typescript
