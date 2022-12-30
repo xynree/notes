@@ -153,3 +153,92 @@ Slicing Strings
 Methods for Iterating Over Strings
 
 - be explicit about whether you want `chars()` or `bytes()`
+
+## 8.3 Storing Keys with Associated Values in Hash Maps
+
+- Type: `HashMap<K,V>` stores a maping of keys of type `K` to type `V` using a hashing function
+- Key can be of any type
+
+Creating a New Hash Map
+
+`let mut scores = HashMap::new()`
+
+- must `use` the HashMap from standard library
+- Store data on the heap
+
+Accessing Values in a Hash Map
+
+- We can get values by providing a key to the `get` method
+
+```rust
+fn main() {
+    use std::collections::HashMap;
+
+    let mut scores = HashMap::new();
+
+    scores.insert(String::from("Blue"), 10);
+    scores.insert(String::from("Yellow"), 50);
+
+    let team_name = String::from("Blue");
+    let score = scores.get(&team_name).copied().unwrap_or(0);
+}
+```
+
+- Get method returns an `Option`
+- We can iterate over key/value pairs using a for loop
+
+```rust
+    for (key, value) in &scores {
+        println!("{key}: {value}");
+    }
+```
+
+Hash Maps and Ownership
+
+- For types with `Copy` trait (i32), values are copied into hash map.
+- For owned variables, values are moved and hash map new owner.
+
+Updating a Hash Map
+
+- Number of key/value pairs is growable, but each unique key can have only 1 value associated at a time8
+
+Overwriting a Value
+
+- If we insert a kye/value into a hashmap, value associated with key will be replacd
+
+```rust
+fn main() {
+    use std::collections::HashMap;
+
+    let mut scores = HashMap::new();
+
+    scores.insert(String::from("Blue"), 10);
+    scores.insert(String::from("Blue"), 25);
+
+    println!("{:?}", scores);
+}
+```
+
+Adding a Key Only if A Key isn't Present
+
+- Special API: `entry`: takes key you want to check, then returns enum `Entry` representing a value that may or may not exist
+- `or_insert` method on Entry will return a ref to the value if it exists, and if not inserts a new value
+
+Updating a Value based on the Old Value
+
+```rust
+fn main() {
+    use std::collections::HashMap;
+
+    let text = "hello world wonderful world";
+
+    let mut map = HashMap::new();
+
+    for word in text.split_whitespace() {
+        let count = map.entry(word).or_insert(0);
+        *count += 1;
+    }
+
+    println!("{:?}", map);
+}
+```
