@@ -35,3 +35,19 @@ fn main() {
 ```
 
 ## 12.2 Reading a File
+
+- Adding functionality to read a file: use `fs` package
+
+## 12.3 Refactoring to Improve Modularity and Error Handling
+
+- Logic should be kept in `lib.rs` because `main.rs` can't be tested
+- query and file_path should have their own struct called "Config"
+- This can be created by setting up a constructor `new` function
+- Improving the error message: add a check to display a better error message if there are not enough arguments
+- Returning a `Result` instead of calling `panic!`:
+- Using `unwrap_or_else` defines custom, non-panic error handling
+- `process::exit` function stops program immediately and returns number that was passed as exit status.
+- Extracting logic: we can move the reading file logic to a function called `run`
+- `run` takes `Config` and returns a `Result` with any error.
+- Use `if let Err(e)` to handle the situation if `run(config)` causes an error.
+- Move the code into `library` crate: `run` function, `Config::new`, etc.
