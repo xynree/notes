@@ -51,3 +51,32 @@ fn main() {
 - `run` takes `Config` and returns a `Result` with any error.
 - Use `if let Err(e)` to handle the situation if `run(config)` causes an error.
 - Move the code into `library` crate: `run` function, `Config::new`, etc.
+
+## 12.4 Developing the Library's Functionality with TDD
+
+- We add searching logic using TDD process:
+  1. Write a failing test
+  2. Write or modify just enough code to make new test pass
+  3. Refactor code to make sure tests continue to pass
+  4. Repeat
+
+```rust
+pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
+    vec![]
+}
+```
+
+- We define explicit lifetime `'a` to use with `contents` argument and the return value:
+  - Specifies which argument lifetime is connected to the lifetime of the return value.
+  - String slices will reference slices of the argument `contents` rather than `query`
+
+## 12.5 Working with Environment Variables
+
+- Let's add another feature: an option for case-insensitive search that can be turned on with an env variable.
+- Add an env variable using `std::env` library
+`let ignore_case = env::var("IGNORE_CASE").is_ok();`
+
+## 12.6 Writing Error Messages to Standard Error instead of Standard Output
+
+- `println!` is only capable of printing to standard output
+- `eprintlin!` macro prints to the standard error stream
