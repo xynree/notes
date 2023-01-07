@@ -101,3 +101,13 @@ fn shoes_in_size(shoes: Vec<Shoe>, shoe_size: u32) -> Vec<Shoe> {
 ```
 
 ## 13.3 Improving Our I/O Project
+
+- We can use iterators to make code clearer and more concise
+- We can now use `env::args` as an iterator directly instead and remove `clone`
+- We can use this iterator to build our `Config::new`
+- search function can also be simplified by using `lines` and calling iterator adaptor `filter`
+
+## 13.4 Comparing Performance: Loops vs. Iterators
+
+- Loops and Iterators combine down to almost the same code at compile time because of the lazy iteration and unrolling
+- virtual equal in runtime performance
