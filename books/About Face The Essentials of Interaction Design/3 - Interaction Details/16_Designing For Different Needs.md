@@ -58,3 +58,91 @@
 - Minimal Working Set: A subset of functions that are frequently accessed by most users
 - Designer should use immediate modality for all commands in the minimal working set of the application's primary users
 - Exception to multiple command modalities rule: Dangerous commands such as Erase All, Clear, etc. should not have easy, immediate modality commands. These should be protected within menus.
+
+### Contextual Help and Assistive Interfaces
+
+- There are patterns to support help in context or helping users accomplish involved tasks
+
+#### Guided Tours and Overlays
+
+- Guided tours: Provide introduction to features and interfaces with a sequential set of screens or cards, with explanatory dialogue
+- Describe a set of basic functions or take the user through typical sequentail processes
+- Usually launch automatically the first time an app is run
+- Important that these tours have a `skip` button available on each screen
+- Screen to dismiss tour at the end is also needed, as well as a relaunch
+- maximum 5 - 7 cards
+
+![picture 2](https://s2.loli.net/2023/01/12/1vYGZNqRl89gjwe.png)  
+
+- Overlays: for simple apps with functions that are not evident
+- Overlays point out apps key behaviors and have descriptions of usage
+- Useful in that features can be shown in the spatial context of a full screen
+- Should include a way to relaunch it somewhere in the app (should be unintrusive)
+
+![picture 1](https://s2.loli.net/2023/01/12/WItaTOUxuinwZH9.png)  
+
+#### Galleries and Templates
+
+- For document building applications: consider giving users some templates for them to work off of
+- Gallery of basic document types makes it less **intimidating**
+
+#### Input and Content Area Hints
+
+- Hints: Small and often grayed text that provides directions of examples of use in input fields (placeholder text)
+- Content area hints: Notification for what an area is supposed to be (No status indicators)
+
+#### Pros and Cons of Wizards
+
+- Attempts to guarantee success by stepping users through a series of steps
+- Dialogs sometimes ask questsions in sequence - can feel like an interrogation
+- Most are written as a rigid step by step process
+- Appropriate in a few cases: initial configuration, online surveys
+- Better way to cfreate a wizard - automatic function that doesn't ask questions of users
+
+#### Tooltips and tooltip overlays
+
+- Very effective for desktop or stylus applications
+- For mobile: tooltip overlays are triggered by tapping a help button
+- Appropriate for complex apps if used as a "cheat sheet"
+
+#### Traditional Online Help
+
+- Verbose online help should be focused for people who are already using product successfully and want to expand their knowledge
+- People will google questions, make sure the official answer is out there to provide a standard definition
+
+#### Full-text search vs. Indexing
+
+- Full text search is only as complete as the wording of the help text
+- Helpful to create synonym mappings in the index
+- Good design reduces user's reliance on healp systems
+
+### Overview descriptions
+
+- Scope, effect, power, upside, downside general process are the descriptors users are looking for
+
+### In-app user guides
+
+- Reference for detailed info on using complex functions
+- Not commmonly looked at
+
+## Customizability
+
+### Personalization
+
+- Giving users ability to customize allows them to express individuality without major structural change
+  - Decorate persistant objects: Personalization
+  - Tools for personalizing must be simple and easy to use
+  - Should be easy to undo
+- Do not move the persistent objects themselves
+
+### Configuration
+
+- Moving, adding, deleting persistent objects
+- For more experienced users and experts
+- Examples: moving controls around on toolbar
+- In some cases, configuration is critical: Evolving workflows are an example
+- IT manages value configuration: coerces corporate users into practicing common methods
+- Buying decisions often decided on how easily an application can be configured for their enterprise
+  - Example: Microsoft office is highly configurable
+
+### Idiosyncratically modal behavior
