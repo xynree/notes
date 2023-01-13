@@ -146,3 +146,83 @@
   - Example: Microsoft office is highly configurable
 
 ### Idiosyncratically modal behavior
+
+- User populations may be split on effectiveness of certain idioms
+- Idiosyncratically modal: Splitting of preferences into 2+ large groups
+
+## Localization and Globalization
+
+- Localization: translating an app for a particular language and culture
+- Globalization: making an app as universal as possible across many languages and cultures
+- Immediate informations are idiomatic and can be globalized easily
+- Pedagogic interfaces: language dependent
+  - Words and phrases often change in length in different languages
+  - Words can be difficult to sort in some languages
+  - Ordering of time varies for countries
+  - Decimanl points and currencies represented differently
+  - Some countries use week numbers over Gregoriation calendar
+
+## Accessibility
+
+### Goals of Accessibility
+
+- Users can understand all instructions, info, and feedback
+- USers can understand and easily manipulate controls and inputs
+- USers can navigate easily and always be aware of where they are in an interace and navigational structure
+- An acccessibility strategy might be to design separate accessibility modes that alter screen contrast and colors
+
+### Accessibility Personas
+
+- Interview users who have disabilities that would affect use of the product
+- Follow guidelines as a starting point for appraoching accessible design
+
+#### Leverage OS Accessibility tools
+
+- App shouldn't use keystroke sthat are already used by OS-level accessibility functions
+- App should work properly with accessibility features turned on
+- App should use standard API's for input and output when possible
+
+#### Don't override user-selected system settings
+
+- App should accomodate system-level accessibility settings for input i/o
+
+#### Enable standard keyboard access methods
+
+- User should be able to traverse the entire set of user interface controls and content ares with a Tab key
+- ARrow keys should let user traverse list, table, and menu contents
+- Enter key should activate buttons and toggles
+
+#### Incorporate Display options for those with limited vision
+
+- Range of options for users with vision problems;
+  - Highc ontrast display option
+  - Enlarging typeface and increasing its weight (independently)
+  - Color-blind friendly info display
+  - Minimizing motiona nd animation in UI elements
+- Application should not use color alone to conve3y meatning of data: use other attributes like size, position,m brightness, shape, and/or text labeling
+
+#### Provide visual-only and audible-only output
+
+- Suppor vision impaired witha udible interfaces
+
+#### Don't flash/flicker/scroll/or blink visual elements
+
+- Automatic scrolling text/other animations and flashing/blinking can cause issues
+
+#### Use simple, clear, brief language
+
+- Short/simple text labels and instructional text will make them easier to learn and use
+
+#### Response times should support all users
+
+- Allow users to choose longer response times
+- Avoid timing out on actions or make the time-out period adjustable
+
+#### Keep layouts and task flowes consistent
+
+- People work better if they need to remember only a single navigation and action paradigm
+
+#### Provide text equivalents for visual elements
+
+- Tooltips that can be enunciated by screen readers
+- Add alt tags to visual elements so they can be understood by people using text-based browsers
