@@ -178,7 +178,7 @@
 
 #### Leverage OS Accessibility tools
 
-- App shouldn't use keystroke sthat are already used by OS-level accessibility functions
+- App shouldn't use keystrokes that are already used by OS-level accessibility functions
 - App should work properly with accessibility features turned on
 - App should use standard API's for input and output when possible
 
@@ -189,21 +189,21 @@
 #### Enable standard keyboard access methods
 
 - User should be able to traverse the entire set of user interface controls and content ares with a Tab key
-- ARrow keys should let user traverse list, table, and menu contents
+- Arrow keys should let user traverse list, table, and menu contents
 - Enter key should activate buttons and toggles
 
 #### Incorporate Display options for those with limited vision
 
 - Range of options for users with vision problems;
-  - Highc ontrast display option
+  - High contrast display option
   - Enlarging typeface and increasing its weight (independently)
   - Color-blind friendly info display
-  - Minimizing motiona nd animation in UI elements
-- Application should not use color alone to conve3y meatning of data: use other attributes like size, position,m brightness, shape, and/or text labeling
+  - Minimizing motion and animation in UI elements
+- Application should not use color alone to convey meatning of data: use other attributes like size, position, brightness, shape, and/or text labeling
 
 #### Provide visual-only and audible-only output
 
-- Suppor vision impaired witha udible interfaces
+- Support vision impaired with audible interfaces
 
 #### Don't flash/flicker/scroll/or blink visual elements
 
@@ -218,7 +218,7 @@
 - Allow users to choose longer response times
 - Avoid timing out on actions or make the time-out period adjustable
 
-#### Keep layouts and task flowes consistent
+#### Keep layouts and task flows consistent
 
 - People work better if they need to remember only a single navigation and action paradigm
 
