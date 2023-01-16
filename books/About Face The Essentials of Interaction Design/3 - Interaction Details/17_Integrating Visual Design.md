@@ -133,3 +133,83 @@
   - Aesthetic appeal
   - Design will create a sense of order that feels comfortable to users
   - Efficiency: Standardizing layouts reduces the amount of labor required to produce a high-quality interface
+
+### Create a Logical Path
+
+- Layout must properly structure a logical path for users to follow through the interface
+  - Should take into acount that eye moves from top to bottom and left to right
+
+### Balance Interface Elements
+
+- Balanced assymettry provides visual entry points to the screen and major areas
+- Asymmetrical design is difficult to achieve in UI bc there is not much screen real-estate
+
+### Signal What users Can do
+
+- Visual design helps users determine what they can do on the screen
+- Affordance breaks down to design of controls and content categories with layout, icons, symbols, and pre-visualizing results when possible
+
+### Use Icons
+
+- Icons can help convey brand attributes
+- Should be consistent
+
+### Convey a sense of the function
+
+- Represent abstract concept in iconic language
+- Try to rely on idioms
+- For more obvious functions:
+  - Represent both the action and an object acted on to improve comprehension
+    - Ex: Cut command showing a document with an X through it is easier to understand than a pair of scissors
+  - Avoid culturally specific metaphors
+  - Group related functions to provide context
+  - Keep icons simple
+  - Reuse elements when possible
+
+### Associate Visual Symbols with Objects
+
+- Try to use symbols whenver objects are represented on screen to establish a connection
+- visually differentiate symbols representing different object types
+- Render icons and visual symbols simply
+- Pre-visualize results when necessary: Render an illustrate that communicates the behavior
+- Visually communicate function AND behavior
+
+### Respond to commands
+
+- After executing commands, user should see some response
+- Output shoudl be instant and immediate
+- If response takes > 1/10 of a sec but less than a sec, provide a bisual cue that command was received and another when activity is complee
+- If response takes < 10 sec, let user know about delay and provide visual cue that a process is running, with an animation (loading bar)
+- If > 10 sec: Design alert explaining delay, another for a running status update, followed by a cue when process is complete
+
+### Draw Attn to Important Events
+
+- Goal-oriented software offers system event info proactively
+  - Ex: badges
+- Challenges: Attention mechanisms are not under conscious control
+  - You can be too heavy handed
+- Difficult to keep attn signal effective but in line with experience
+
+### Minimize the amount of visual work
+
+- Visual noise: Caused by superflous visual elements that detract from the primary objectives of communication
+  - Embellishment
+  - Rendering that doesn't add info
+  - Rule boxes and "heavy" visual elements separating controls
+  - Crowding of elements
+  - Intense colors, textures, contrasts
+  - Weak visual hierarchy
+- Cluttered interfaces provide too much functionality in a constrained space
+  - This increases the user's cognitive load
+
+### Keep it simple
+
+- Visual interfaces should be minimal, typography should not vary widely
+- Unnecessary variation to the enemy of a coherent design
+- Every visual element and every change in color, size or visual property should be there for a reason
+  - If no good reason, get rid of it
+- Good visual interfaces are efficient: make best use of the minimal set of visual and functional elements
+  - Experiemnt with removing elements to test their contribution to clarity of the message
+- Leverage: Single interface elements used for several related purposes
+
+## Visual Information Design Principles
