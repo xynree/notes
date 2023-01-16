@@ -143,3 +143,69 @@ Creating Multiple Producers by Cloning the Transmitter
 
 - We can clone the transmitter to send things on a new thread
 - This way, multiple users can send to a receiver
+
+## 16.3 - Shared-State Concurrency
+
+- Another concurrency method: Multiple threads access the same shared data
+- Shared memory concurrency is like multiple ownership
+  - There different owners need managing
+
+Using Mutexes to Allow Access to Data from One Thread at a Time
+
+- Mutex: mutual exclusion
+  - A mutex only allows one thread to access data at any given time
+- To access data inside a mutex, a thread must first signal that it wants access by asking to acquire the mutex's `lock`
+  - `Lock`: Data structure that is part of mutex keeping track of who has exclusive access to data currently
+- The mutex "guards" the data it holds via the locking system
+- 2 rules:
+  - Msut attempt to acquire lock before using data
+  - When you're done with data that mutex guards, unlock the data so other threads can acquire the lock
+
+The API of `Mutex<T>`
+
+- Create a `Mutex<T>::new`
+- To access data inside mutex, use `lock` method to acquire the lock
+  - Will block current thread
+  - Call to `lock` would fail if anothe thread holding lock panicked
+    - `unwrap` and have thread panic if that happens
+  - After acquiring lock, treat return value `num` as a mutable rerence to data inside
+    - Type of mutex is `Mutex<i32>`, forcing us to call `lock` to be able to use the `i32` value
+  - Calling `lock` returns a smart pointer `MutexGuard` wrapped in `LockResult`
+  - Smart pointer's `Drop` implementation automatically releases lock when a `MutexGuard` goes out of scope
+
+Sharing a `Mutex<T>` Betwween Multiple Threads
+
+- Arc<T> is safe to use in concurrent situations: atomically reference counted type
+- Thread safety has a performance penalty
+- `Arc<T>` and `Rc<T>` have the same api
+- `std::sync::atomic` module types provide safe concurrent, atomic access to primitive types
+
+Similarities between `RefCell<T> / Rc<T>` and `Mutex<T>/Arc<T>`
+
+- `Mutex<T>` provides interior mutability, allowing us to mutate contents inside an `Arc<T>`
+- Mutex comes with risk of creating deadlocks
+  - Operation needs to lock 2 resources and two threads have acquired one of the locks, causing an infinite wait
+
+## 16.4 Extensible Concurrency with the `Sync` and `Send` Traits
+
+- Rust lang has very few concurrency features
+- Two concepts are embedded in the language: `std::marker` traists `Sync` and `Send`
+
+Allowing Transference of Ownership between Threads with Send
+
+- `Send` trait indicates that ownership of values of the type implementing `Send` can be transferred between threads
+  - Almost every Rust type has `Send` but exceptions, including `Rc<T>`
+  - Any type composed entiredly of `Send` types is automatically marked `Send` as well
+  - All primitive types are `Send` aside from raw pointers
+
+Allowing Access From Multiple threads with `Sync`
+
+- `Sync` indicates that it is safe for the type implementing `Sycn` to be referenced from multiple threads
+- Primitve types are `Sync`, and types composed of `Syncs` are also `Sync`
+- `Rc<T>`, `RefCell<T> and Cell<T>` types are not `Sync`
+- Mutex is `Sync` and can be used to share access with multliple threads
+
+Implementing `Send` and `Sync` Manually is Unsafe
+
+- Manually implementing traits involves implementing unsfae Rust code
+- building new concurrent types not made up of Send and Sync parts requires careful thought
