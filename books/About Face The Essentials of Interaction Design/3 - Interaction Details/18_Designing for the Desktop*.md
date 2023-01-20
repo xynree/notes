@@ -161,3 +161,84 @@ Necessary Rooms
 - Flattening organization can improve discoerability and learnability
 - Dialog box enabled simplification of menus
 - Cascading menus should only be employed in sophisticated sovereign applications, for rarely used functions
+
+## Toolbars, Palettes, and Sidebars
+
+- Toolbar functions are modeless and plainly visible
+- Usually one or sometimes 2 rows/columns of visible, immediate, labeld functions
+
+### Toolbars and Menus
+
+- Work together with menus to satisfy user needs
+- Toolbars are for frequently used commands and cater to intermediates
+- Receptacles for essential functions
+
+### Toolbars versus modeless dialogs
+
+- Toolbars are modeless but: visually different from modal dialogs and there is no need to worry about dismissing them
+- Efficient in screen space
+- Don't cover what they are operating on
+- Modeless dialogs are free-floating windows: but can result in window management excise
+- Docking toolbars: Dragging a toolbar away from application forms its own small window
+
+### Toolbar Buttons
+
+- Icon button: visual mnemonic for a function
+- Identifiers must have quick recognition
+- Image on button doesn't need to teach users its purpose - just needs to be easy to distinguish from other icons in the set
+- Users should help learn purpose of icons through other means
+
+### Tooltips
+
+- Using both text and images can take up too much screen space
+- Tooltips bridge gap between two classes of users with different needs
+- Adds pedagogical vector to icon buttons without he drawbacks of tesxt labeling
+- Delay is important to tooltip - displays info only after the user has hovered the cursor for a second or so
+- Tooltips make toolbar controls more accesible for intermediates
+
+### Disabling Toolbar Controls
+
+- Toolbar controls should become disabled if not applicable
+- Should not be pliant
+- Do not make toolbar controls disappear as users remember toolbar layouts by position
+
+### Toolbar Control Proliferation
+
+- As toolbars developed, controls began to reflect the state of application data
+- Toolbars often now contain drop down menus  - compact way to provide powerful functionality
+
+### Moveable Toolbars
+
+- Moveable/Detacheable toolbars & palettes
+  - Introduce potential for parts of toolbar to be obscured, but ways to get around it include expansion icon buttons and dorp down menus
+
+### Customizable Toolbars
+
+- Allowing advanced users to customize and configure ribbon control
+
+### Contextual (popup) toolbars
+
+- Small group of icon buttons adjacent to the mouse cursor
+- Different dependent on object selected
+
+### The Ribbon Control
+
+- Oversized, horizontal, tabbed toolbar
+
+### Tool Palette
+
+- Differ from toolbars: set of mutually exclusive tools, which represent an operating mode of the application
+  - Creation
+  - Selection
+  - Manipulation
+- Typically dock and float
+- Used mostly in graphics applications
+
+### Sidebars, Task Panes, and Drawers
+
+- Sidebar/task pane: Pane dedicated to provide functions that were delivered through dialog boxes
+- Sidebars like properties area below a document pane or work space - lets you modify a selected object while minimizing confusion and screen excise
+- Drawers: Can be stowed away or offscreen in a pop open drawer
+- Alternative to drawers: Ability to hide and restore secondary panes with a keystroke
+
+## Pointing, Selection, and Direct Manipulation
