@@ -242,3 +242,94 @@ Necessary Rooms
 - Alternative to drawers: Ability to hide and restore secondary panes with a keystroke
 
 ## Pointing, Selection, and Direct Manipulation
+
+- Objects on screens can be manipulated directly through a `pointing device`
+- Fingers are too blunt to be precise
+- Most desktop screens can't recognize ointing
+- Mouse is a version of a pointing device that is "relative" (moves based on current cursor position)
+
+### Mouse Ergonomics
+
+- Distinct dividing line between near and far motions
+- Near: keep heel of hand stationary
+- Far: Must pick up your hand
+- When heel of hand is down, you use fine motor skills of finger muscles
+- When heel of hand is lifted, use gross motor skills of arm
+- Transitioning between gross/fine motor skills is hard
+- Don't force users to make the switch continually
+- Clicking a mouse also requires fine motor control
+- Pay attention to user aptitude, skill and context to make decisions about how much motor work using an interface should require
+  - Reducing complexity/user effort vs. providing useful and powerful tools
+  - It's a good idea for things to be used together to be placed together
+- Switching from keyboard to mouse and back is worse
+- Applications should fully support both mouse and keyboard for navigation and selection tasks
+- Each mouse idiom should have a non-mouse alternative
+
+### Mouse Button and Controls
+
+Left Mouse Button
+
+- Used for all primary direct-manipulation functions
+
+Right Mouse Button
+
+- OFten treated as nonexistent
+- Apple uses to enable direct access to context-specific properties in menus
+
+Scroll Wheels and Scroll Balls
+
+- Avoid dealing with the challenges of scrollbars
+
+Modifier Keys
+
+- Ctrl, Alt, Command, Shift
+- Commonly used to modify commands
+- Cursor hinting to show meanings of modifier keys for non-text related functions
+- When modifier pressed, hint should change to reflect new function
+
+Pointing
+
+- Objects that can be manipulated often should change appearance subtly to indicate this attriburte when hovered (pliancy)
+
+Clicking
+
+- Defined to trigger a state change or control state
+- If user moves cursor off control while still holding down the mouse button, the push button should return to unpushed state , but focus remain on control
+- When user releases mouse button somewhere off the button, nothing should happen
+- This is a form of an escape route
+
+Point-and-click Combinations
+
+- Most users will perform: point, click, right clikc, click and drag, double click
+- But most users will not perform: double drag, chord click
+
+Clicking and Dragging
+
+- Common uses include selecting, reshaping, repositioning, drawing, drag and drop
+- Good to have an escape hatch here as well
+- Click and dragging on trackpad is not ideal
+- Drag actions on tablets aren't as good as mouse drag
+
+Double-clicking
+
+- Double clicking most controls has no meaning, and extra click is usually discarded, or sometimes it is seen as a second click (toggle)
+- Should be avoided where a single click would work
+
+Chord-Clicking
+
+- Clicking two buttons simultaneously
+- Second mouse button must be clicked berfore the first mouse button is releaed
+- Clumsy and not often used, though sometimes used as subsitute for Shift key on select
+- Chord clicking is sometimes used to cancel a drag
+
+Double-clicking and Dragging
+
+- Only in special sovereign applications
+- For most products, stick with more basic mouse actions
+
+Mouse-up and Mouse-down Events
+
+- Mouse-down over object or data should select the data
+- Actions should be consistent within a product and platform
+- When object is selected, selection should take place on mouse-down
+- If cursor is positioned over a control, action on mouse-down state should be to tentatively activate a transition
