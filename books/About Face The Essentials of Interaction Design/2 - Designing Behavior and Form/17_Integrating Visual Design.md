@@ -213,3 +213,90 @@
 - Leverage: Single interface elements used for several related purposes
 
 ## Visual Information Design Principles
+
+- Good visual design - clear thinking made visible
+- Achieve good design through understanding a viewer's cognitive task and design principles
+- Information Design problems:
+  - Hard to display multidimensional information(info with more than 2 variables) on a 2D surface
+  - Resolution of a display is often not high enough to show dense info
+- One capability not available to print: Interactivity
+  - Electronic displays progressively reveal info as users need more detail
+- Edward Tufte's 7 "Grand principles":
+
+### Enforce Visual Comparisons
+
+- Should provide a means forusers to compare related variables and trends or to compare before-and-after wscenarios
+- Comparison makes info more valuable and comprehensible to users
+  - Example: Preview
+
+### Show Causality
+
+- Should use rich modeless feedback to inform users of potentional consequences or hints on how to perform actions
+
+### Show Multiple Variables
+
+- Displays that proivde ifno on multiple related variables should be able to display them simultaneously w/o sacrificing clarity
+- User should be able to selectively turn off and on the variables to make comparison easier and correlations clearer
+
+### Integrate text, graphics, and data in one display
+
+- Reading and deciphering legends are a form of navigation excise
+
+### Ensure the content's quility, relevance, and integrity
+
+- Info that is displayed needs to help users achieve particular goals that are relevant to their context
+
+### Show things adjacent in space, not stacked in time
+
+- Showing changes over time is a lot easier  when changes are shown adjacent in space
+- In software, animation can be used to effectively show change over time
+
+### Don't dequantify quantifiable data
+
+- Don't abandon display of numbers themselves when using graphs and charts to make the info easier to grasp
+
+## Consistency and Standards
+
+### Benefits of Interface Standards
+
+- Improves users' ability to quickly learn interfaces and enhances productivity by reducing errors
+- Users can more easily predict app behavior based on past experience with other parts of interface
+- Interface standards benefit software vendors
+- Saves dev time
+- Reduces maintenance costs and improves design reuse
+
+### Risks of Interface Standards
+
+- Product that follows will only be as good as the standard itself
+- Great care must be taken to ensure the standard specifies a truly usable interface & can be used by the devs who must build it according to standard's specs
+- Interface standards should emphasize the interface's look and feel, but not say much about its deeper behavior or its organizational structure
+- Interface standards focus on general issues of cognition and branding
+- They outline presentation details of an interface, not the interaction framework
+
+### Standards, guildelines, and rules of thumb
+
+- Need to evolve as technology and understanding of user goals evolve
+- Most appropriately treated as detailed guildelines or rules of thumb
+- Don't force-fit an app interface into an inappropriate interaction model
+
+### When to Violate Guidelines
+
+- Obey standards unless there is a truly superior alternative
+- When an idiom is clearly seen to be significanlty better by most people in target user audience, good reason to keep it
+
+### Consistency and standards across applications
+
+- There are extra challenges when a company that sells multiple titles decides that all its products must be consistent from an interface perspective
+- Bear in mind that consistency !== rigitidty, esp where it isn't appropriate
+- Iterface and interaction style guidelines need to grow and evolve
+- Try to make changes and additions that are cmopatible with standards
+- the spirit of the law, not the letter of the law
+
+### The Design Language
+
+- Vocabulary of design eleemtns such as shape, color, type, and how these elements are composed and combined
+  - Example: Metro design language
+- Best design languages evolve through the product design process in a user-centric way
+- Decisions are rationalized against other decisions, reduced to what is required to create meaning, utility, and the right emotional tone for users
+- Often communicated through standards and style guides - but these are not synonous
+- Compiling a style guide can help designers rationalize and simplify a design language

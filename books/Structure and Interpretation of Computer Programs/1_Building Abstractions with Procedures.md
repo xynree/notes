@@ -23,3 +23,5 @@
   - Data = stuff we want to manipulate
   - Procedures = descriptions fo rules for manipulating data
 - Powerful languages hould be able to describe primitive data and procedures and have methods for combining and abstracting both.
+
+### 1.1.1 Expressions
