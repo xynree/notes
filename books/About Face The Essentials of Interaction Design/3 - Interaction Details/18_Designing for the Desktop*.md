@@ -333,3 +333,55 @@ Mouse-up and Mouse-down Events
 - Actions should be consistent within a product and platform
 - When object is selected, selection should take place on mouse-down
 - If cursor is positioned over a control, action on mouse-down state should be to tentatively activate a transition
+
+## Trackpads, trackballs, and gesture Sensors
+
+- Often used in meetings, coffee shops, kitchen tables, bed
+- More prone to glitchy behavior than mice
+- Also for laptops
+- Gestures on trackpad shouldn't interfere with OS gestures without reason
+
+## Cursors
+
+- Hotspot: Single pixel of any cursor that is the actual locus of pointing
+- Usually the tip of hte arrow
+- All cursors have a single hotspot pixel
+- Mouse Cursor Hinting is important for effective interaction idioms
+
+## Selection
+
+- Usually accomplished by pointing to and clicking item in question
+- Also used for more complex interactions
+- After user chooses something, in the right context to perform actions on that thing
+- Sequence of events implied by this idiom: `Object Verb Ordering`
+
+Command Ordering and Selection
+
+- Most commnads have a verb that describe an action and an object that describes what will be acted on
+- Consistent with how commands are formed in English
+- Users can select which objects to be operated on and then indicate which verb to execute on them
+- Selection is used commonly in nonlinguistic actions
+- Object-verb ordering is more consistent with direct manipulation
+- There are cases where verb-object can work better
+
+Discrete and Contiguous Selection
+
+- One case: data representec by visual objects that can be mainpulated independently of other objects
+  - Ex: Icons on desktop and vector objects in drawing apps
+  - Discrete data / Discrete selection
+- Another case: Representing data as a matrix of many samll contiguous pieces of data
+  - Ex: text in a word processor
+  - Contiguous data / contiguous selection
+- Both types support single-clikc and click-and drag
+
+Mutual Exclusion
+
+- typically when a selection is made, any previous selection is unmade
+- Objects remain selected until the user selects something else
+- Some applications allow deselct by clicking a second time
+
+Additive Selection
+
+- If no mutual exclusion for interactions, user can select manyu independent objects by clicking them sequentially
+- Shift key is used frequently for this task in contiguous selection, Ctrl for discrete selection
+- Contiguous interfaces should not use additive selection.

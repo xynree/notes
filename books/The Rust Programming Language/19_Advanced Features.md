@@ -178,3 +178,5 @@ Accessing Fields of a Union
 - A union is similar to a struct, but only one field is used in a particular instance at one tiem
 - Used to interface with unions in C code
 - Unsafe because Rust can't guarantee type of the data stored in the union instance
+
+## 19.2 Advanced Traits
