@@ -293,3 +293,41 @@ fn main() {
 ```
 
 - We make a tuple of a `Vec<T>` through a Wrapper in order to implement Display on `Vec<T>`
+
+## 19.3 Advanced Types
+
+Using the Newtype Pattern for Type Safety and Abstraction
+
+- newtype pattern is useful for other tasks: statically enforcing that values are neer confused and indicating units of a value
+- We can use newtype to abstract implementation details of a type, exposing a pub API different from the API of the priate inner type
+- Lightweight way to acheive encapsulation
+
+Creating Type Synonyms with Type Aliases
+
+- We can declare a type alias to give an existing type another name using the `type` keyword
+- `type Kilometers = i32;` (aliases i32)
+- Main use case for type synonyms: reduce repitition
+- Commonly used for `Result<T,E>` type
+
+The Never Type that Never Returns
+
+- `!` type: Emppty type or never type
+- Stands in place of the return type when a function will never return
+- Expressions of type `!` can be coerced into any other type
+- We can replace a match arm with `continue` because `continue` implements `!` type
+- `loop` also is a `!` type
+
+Dynamically Sized Traits and the `Sized` Traits
+
+- DST's or Unsized types: Let us write code using values whose size we only know at runtime
+- example: `str` is a dynamically sized type but `&str` is a reference to the address so it has a fixed size
+- All dynamically sized types must be placed behind a pointer of some time
+- Rust provides `Sized` trait to determine whether or not a type's size is known at compile time
+- Automatically implemented for everything with a known size at compile time. Autopmatically added to generic types as well
+- `?Sized`: T may or may not be `Sized`
+
+```rust
+fn generic<T: ?Sized>(t: &T) {
+    // --snip--
+}
+```
