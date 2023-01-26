@@ -180,3 +180,116 @@ Accessing Fields of a Union
 - Unsafe because Rust can't guarantee type of the data stored in the union instance
 
 ## 19.2 Advanced Traits
+
+Specifying Placeholder Types in Trait Definitions with Associated Types
+
+- Associated types connect a type placeholder with a trait so that trait defs can use the placeholder type in their signature
+- Example: Iterator has associated type `Item`
+
+```rust
+pub trait Iterator {
+    type Item;
+
+    fn next(&mut self) -> Option<Self::Item>;
+}
+```
+
+- Diffrerence from generics: no need to annotate types in each implementation
+- Become part of the trait's contract: implementaors of trait provide a type to stand in for the placeholder
+
+Default Generic Type Parameters and Operator Overloading
+
+- We can specify a default type for the generic type when using the generic type parameter
+- Syntax: `<T=ConcreteType>`
+- Operator Overloading: customizing the behavior of an operator (+ = %) in certain situations
+- We can overload the operations by implementing the traits associated withj the operator
+
+```rust
+use std::ops::Add;
+
+#[derive(Debug, Copy, Clone, PartialEq)]
+struct Point {
+    x: i32,
+    y: i32,
+}
+
+impl Add for Point {
+    type Output = Point;
+
+    fn add(self, other: Point) -> Point {
+        Point {
+            x: self.x + other.x,
+            y: self.y + other.y,
+        }
+    }
+}
+
+fn main() {
+    assert_eq!(
+        Point { x: 1, y: 0 } + Point { x: 2, y: 3 },
+        Point { x: 3, y: 3 }
+    );
+}
+```
+
+Fully Qualified Syntax for Disambiguation: Calling Methods with The Same Name
+
+- Nothing in Rust prevents a trait from having a method with the same name as another trait's method
+- When calling methods with the same name, need to tell Rust which one to use
+
+```rust
+fn main() {
+    println!("A baby dog is called a {}", <Dog as Animal>::baby_name());
+}
+```
+
+- Type annotation to make clear that we want this trait with same name
+- Only need to use this erbose syntax where there are multiple implentations that use the same name
+
+Using Supertraits to Require One Trait's Functionality Within Another Trait
+
+- Sometime s atrait might depend on another trait, this is called a supertrait of your trait
+
+```rust
+use std::fmt;
+
+trait OutlinePrint: fmt::Display {
+    fn outline_print(&self) {
+        let output = self.to_string();
+        let len = output.len();
+        println!("{}", "*".repeat(len + 4));
+        println!("*{}*", " ".repeat(len + 2));
+        println!("* {} *", output);
+        println!("*{}*", " ".repeat(len + 2));
+        println!("{}", "*".repeat(len + 4));
+    }
+}
+
+fn main() {}
+```
+
+- We specify that `OutlinePrint` requires `Display` trait
+
+Using the Newtype Pattern to Implement External Traits on External Types
+
+- We are only allowed to implement a trait on a type if either the trait or type are local to our crate
+- You can get around this using newtype pattern - creating a new type in a tuple struct
+
+```rust
+use std::fmt;
+
+struct Wrapper(Vec<String>);
+
+impl fmt::Display for Wrapper {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "[{}]", self.0.join(", "))
+    }
+}
+
+fn main() {
+    let w = Wrapper(vec![String::from("hello"), String::from("world")]);
+    println!("w = {}", w);
+}
+```
+
+- We make a tuple of a `Vec<T>` through a Wrapper in order to implement Display on `Vec<T>`
