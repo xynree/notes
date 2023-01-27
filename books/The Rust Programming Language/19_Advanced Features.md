@@ -323,11 +323,117 @@ Dynamically Sized Traits and the `Sized` Traits
 - example: `str` is a dynamically sized type but `&str` is a reference to the address so it has a fixed size
 - All dynamically sized types must be placed behind a pointer of some time
 - Rust provides `Sized` trait to determine whether or not a type's size is known at compile time
-- Automatically implemented for everything with a known size at compile time. Autopmatically added to generic types as well
+- Automatically implemented for everything with a known size at compile time. Automatically added to generic types as well
 - `?Sized`: T may or may not be `Sized`
 
 ```rust
 fn generic<T: ?Sized>(t: &T) {
     // --snip--
 }
+```
+
+## 19.4 Advanced Functions and Closures
+
+Function Pointers
+
+- You can pass regular functions to functions
+- Functions coerce to the type `fn` (function pointer)
+- Allow ou to use functions as arguments to other functions
+- `fn` is a type, not a trait
+- Function pointers implement all three closure traits: `Fn` `FnMut` `FnOnce`
+  - You can always pass a function pointer as an arg for a function that expects a closure
+- Best to write functiooons using a generic type and a closure trait so funcitons can accept either functions of closures
+- When would you want to only accept `fn`? Interfacing with external code
+
+Returning Closures
+
+- You can't return closures directly
+- We can use a trait object to get around it:
+
+```rust
+fn returns_closure() -> Box<dyn Fn(i32) -> i32> {
+    Box::new(|x| x + 1)
+}
+```
+
+## 19.5 - Macros
+
+- Family of features: `declarative` macros and three kinds of procedural macros:
+  - Custom `#[derive]` macros
+  - Attribute-like macros to define custom attributes useable on any item
+  - Function-like macros that look like function calls but operate on the tokens used as their argument
+
+The Difference Between Macros and Functions
+
+- A way of writing code that writes other code (metaprogramming)
+- Macros expand to produce more code than the code you've written manually
+- Useful for reducing the amount of code needed to write and maintain
+- Macros can take a variable number of parameters
+- Macros are expanded before the compiler interprets it, so a macro can implement a trait on a type
+- Macro defs are more complex than function defs and are harder to read
+- Must define or bring macros into scope before calling them
+
+Declarative Macros with `macro_rules!` for General Metaprogramming
+
+- Declarative Macro or "macros by example" "macro_rules! macros"
+  - Allow you to write something similar to a `match`
+  - Compares value passed to source code structure and replaces code passed to the macro
+
+```rust
+#[macro_export] // used to make macro public
+macro_rules! vec {
+    // pattern to match (only 1 arm)
+    ( $( $x:expr ),* ) => {
+        {
+            let mut temp_vec = Vec::new();
+            $(
+                temp_vec.push($x);
+            )*
+            temp_vec
+        }
+    };
+}
+```
+
+- Valid pattern syntax in macro defs differs than normal pattern syntax because macro patterns are matched against Rust code structure, not values
+- A form of regex: * specifies pattern matches zero+ of whatever precedes
+
+Procedural Macros for Generating Code from Attributes
+
+- Procedural macros acts more like a function
+- Accept some code as input, operate on code and produce some code as output
+- Defs are in their own crate with a special crate type
+
+How to Write a Custom `derive` Macro
+
+- Rather than making users implement the trait, provide a procedural macro so type can be annotated to get a default implementation of the macro function
+- Need to add the derive macro to the Cargo.toml lib
+
+```rust
+use proc_macro::TokenStream;
+use quote::quote;
+use syn;
+
+#[proc_macro_derive(HelloMacro)]
+pub fn hello_macro_derive(input: TokenStream) -> TokenStream {
+    // Construct a representation of Rust code as a syntax tree
+    // that we can manipulate
+    let ast = syn::parse(input).unwrap();
+
+    // Build the trait implementation
+    impl_hello_macro(&ast)
+}
+```
+
+Attribute-Like Macros
+
+- Similar to cstom derive macros, but allow you to create new attributes
+- More flexible, can be applied to functions as well as structs and enums
+
+Function-Like macros
+
+- Define macros that look like function calls
+
+```#[proc_macro]
+pub fn sql(input: TokenStream) -> TokenStream {
 ```
