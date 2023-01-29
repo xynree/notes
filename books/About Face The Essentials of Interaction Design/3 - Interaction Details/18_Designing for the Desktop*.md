@@ -385,3 +385,107 @@ Additive Selection
 - If no mutual exclusion for interactions, user can select manyu independent objects by clicking them sequentially
 - Shift key is used frequently for this task in contiguous selection, Ctrl for discrete selection
 - Contiguous interfaces should not use additive selection.
+
+Group Selection
+
+- Click and drag operation is the basis for group selection
+- For contigous data: Extend selection from the mouse-down point to the mouse-up point
+- For discrete objects, click+drag operation begins a drag+drop move
+- Clicking between objects will create a drag rectangle
+
+Visual Indication of Selection
+
+- Selected objects must be clearly,boldly indicated.
+- Should be easy to spot on a crowded screen & unambiguous
+- Shouldn't obscure normally visible details of an object
+- Inversion commmonly used to indicate selection, but this can be difficult to read
+  - Other approaches: colored backgrounds, outlines, 3D depression, handles, marquees
+- In drawing applications, easy for selections to get lost
+- Add selection indicators to an object
+  - Many drawing applications use handles to surround selected object and provide points of control
+- Another way to ensure visiblity: Indicate selection by movement
+- MacPaint: selected objects outlined with a dashed line, all dashes move around selected object: Marching ants
+  - Today this is called a marquee
+
+### Insertion and Replacement
+
+- Discrete selection:
+- Incoming data is handed to the selected discrete objects
+- Replacement action: Incoming data replaces selected object
+
+- Contiguous selection:
+  - Incoming data replaces currently selected data
+  - Selecting between two elements of data = insertion point
+  - In word processors, this is the `caret`
+
+### Drag and Drop
+
+- Drag and drop not used as widely as thought, and hasn't lived up to full potential
+- Clicking and ojbect and moving it to a new location, implying a transformation
+- Drag and drop has 2 levels of directness: represents putting object somewhere, and user drags object to specific area or onto another object to perform a function
+
+Visual Feedback for Drag and Drop
+
+- Interface should hint at its pliancy
+- The idea that an object can be dragged is easily learned idiomatically
+- User may forget details of the action, so feedback is importand after user clicks object and starts dragging
+- Meaningful drop targets should be obvious (drop candidates)
+- Drop candidate should visually hint when hotspot of cursor is over it to show that it will indicate their drop
+  - Should not indicate using cursor but instead the drop target itself
+- Not permitted = unpleasant idiom
+- After drop is performed, the current drop cadidate should become the target
+- If released in an invalid location, drag and drop should end with no action. Should use visual inactivity to show this
+
+Indicating Drag Pliancy
+
+- Cursor changing can be distracting
+- Consider building indications into the interface, such as through text or a tooltip
+- Should be indication of drag operation beginning after the source3 object is picked up
+  - Fully animate the drag operation, showing the object moving in real time
+  - Dragging a transparent outline or thumbnail of object may be better to prevent obscuring the cursor
+  - Also useful for repositioning, because outline can be moved relative to the source object
+
+Indicating Drop Candidacy
+
+- Visually change the drop candidates to alert users that they can do something with the dropped object
+- One option is to only show possible drop candidates when in the drag operation and nothing else
+
+Insertion Targets
+
+- Source objects can be dropped in spaces between other objects
+- Special type of visual hinting displays behind the GUI objects in the contiguous data: `insertion target`
+  - Ex: vertical black bar appears to show where something will be inserted
+- When something can be drag and dropped between other objects, application should show an insertion target
+
+Visual Feedback at Completion
+
+- When source object is dropped, should provide feedback that an operation has ocurred
+  - If dragging from one directory to other, source object must disappear from source and reapppear in target
+  - If target represents a function, icon must hint that it received the drop and is now operating
+  - Can do this with animation or by changing visual state in other ways
+
+Auto-Scrolling
+
+- What should happen when selected objects are dragged beyondt he border?
+- App must automatically scroll in the direction of the drag if the user wishes to place the object somewhere else in the application
+- Wherever drop targets could possible be scrolled offscreen, the app should auto-scroll
+- Begin autoscrolling just inside of the app border instead of outscide the border
+- Variable auto-scroll rate: Auto scrolling increases ins peed as cursor gets closer to the window edge
+- Should have a time delay: Auto scroll should only begin after drag cursor h as been in the auto-scroll zone for about a half second
+- If a user drags outside of scrollable window, no auto-scrollign should occur
+
+Avoiding drag-and-drop Twitchiness
+
+- If an object can be either selected or dragged, mouse should bias twoards select
+- There should be a bounce and debounce time to ignore extra transistions if they occur soon after the first one
+- Drag Threshold: mouse events should be ignored until mouse movement exceeds a small threshold
+  - This avoids inadvertent drag and drop
+- We can vary the drag thresholds for more unlikely actions
+
+Fine Scrolling
+
+- Idiom to click a modifier in which 10 px of mouse movement are interpreted as a single pixel of object movement "vernier"
+- You can also make the arrow keys active during a drag operation - holding rrow keys will move selection 1 pixel at a time
+- On activating the vernier, desenstiize the mouse
+
+### Control Manipulation
