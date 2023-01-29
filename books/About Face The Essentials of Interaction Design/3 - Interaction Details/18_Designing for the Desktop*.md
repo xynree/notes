@@ -489,3 +489,107 @@ Fine Scrolling
 - On activating the vernier, desenstiize the mouse
 
 ### Control Manipulation
+
+- Many controls require the motion of a click and drag rather than just a normal click
+- Demands more of users because of juxtaposition of fine motions with gross motions
+- Menu is primary control for beginners, but it is one of the more difficult to operate
+- Provide additional idioms to accomplish the same tasks
+
+Modal tools and palettes
+
+- With modal tools, after selecting a tool, the display area is then completely in that tool mode
+  - Cursor also usually changes
+- Modal tools can be disruptive in complex applications
+  - For intermediate users, use keyboard commands
+- Managing a modal tool app gets difficult when there is a large quantity of tools
+- Some products use modifier keys to modify various modes
+  - This an be hard to learn, remember, and use
+
+Charged Cursor Tools
+
+- When a user selects a tool or shape from palette, the cursor becomes "charged" with a single instance of the object
+- Doesn't work too well for functions but good for graphic objects
+  - Example: Rectangle tool becomes "charged" with one rectangle
+- Important to change cursor to indicate it has assumed a modal behavior
+- How to discharge cursor? Pressing Esc is a standard idiom
+
+### 2D Object Manipulation
+
+Repositioning
+
+- Clicking an object and draggint o a new lo cation
+  - Takes the place of other idioms
+  - Demands a click-and-drag action
+  - Solution: Dedicate a specific physical area of object for repositioning
+    - Example: Repositioning occurs in windows on the title bar
+- Before moving object, must be selected. Selectioin should take place on the mouse-down transition
+- Creates a problem for moving contiguous data
+  - No good alternative for moving arbirtrry chunks of text
+- Modifier keys are often used to constrain the drag to a single dimension "constrained drag"
+- You can provide guides to assist users in moving around onscreen
+- "Snapping" to guides
+
+Resizing and Shaping
+
+- No difference between resizing and reshaping
+- Important to communicate which object is selected and where user must click to resize or reshape object
+- Popular set of idoms: Resize Handles
+- Shift is often used as a modifier to keep the same aspect ratio
+- Reshaping complex objects: Vertex Handle
+- Polyline: Multisegment line by vertices
+- For curved line, best mechanism for reshaping is the Bezier curve
+  - Best reserved for specialized drawing and modeling applications
+
+Connecting
+
+- User clicks and drags from one object to another
+- This creates a connecting line or arrow from first object to the second
+- As connections are dragged, visual feedback is provided "rubber banding"
+- Rubber banding is clearest idiom, but other options for cursor hinting are to show valid targets for connection
+- They should always highlight when a connection is dragged over them to indicate willingness to accept the connection
+
+### 3d Object Manipulation
+
+Display Issues and Idioms
+
+- Lack of parallax in 3D interactions on 2D screens
+- Occlusion: Near objects obscure far objects
+
+Multiple Viewpoints
+
+- Presenting multiple views on screen, displaying scene from a different angle
+- Usually use multipane window that permits 1/2/3/4 pane configurations
+- Require users to look in several places at the same time to find out object position
+
+Baseline Grids, Depthcueing, shadows, and poles
+
+- Idioms to help get around some of the problems created by multiple viewpoints
+- Baseline grids provide virtual "floors" and "walls" to a scene per axis
+- Depthcueing: Objects deeper in the field of view appear dimmer
+- Single floor grid and pole: User can track where in 3D space the object is moving by watching where the base of the pole moves on surface fo the grid
+
+Guidelines and other rich visual hints
+
+- Sketchup allows users to lay down their own drafting lines
+
+Wireframes and Bounding Boxes
+
+- Help solve problems of object visibility
+- Selected objects are often rendered but unselected are wireframes
+
+Drag Thresholds
+
+- Translating 2D cursor motions in the plane of the screen into 3D space is difficult
+- Typically, up and down mouse movements translate into movement along one axis
+- 45 degree drags are used for each of the other axes
+
+The Picking Problem
+
+- Difficult to know how many of the overlapping items user wants to select when it is moused over
+- Group selection is also hard
+- Providing easy ways to zoom and move around scene can help this problem
+
+Object Rotation, Camera Movement, Rotation Zoom
+
+- Modifiers and keyboard shortcuts critical
+- Include thumbnails in corner of screen
