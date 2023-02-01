@@ -7,7 +7,8 @@
 
 ## Mobile Form Factors
 
-- Handheld: Phones and media devices like iPod touch
+- Handheld: Phones and media
+- Most often displayed in a scrolling vertical list, but works in grid, carousel, and swimlane layouts devices like iPod touch
 - Tablets: 9/10 in diagonal screens
 - Mini-tablets: Devices 7/8in
 
@@ -89,3 +90,105 @@
   - Vertical tool bars may make more sense
   - Lists: Grid, swimlane and card approaches tend to work better than single-column lists
   - Popup vs full screen: Phone sytel full screen idioms won't work: implement them as pop-up dialogs like on a full-size tablet
+
+## Mobile Navigation, Content, and Control Idioms
+
+### Browse Controls
+
+- Most mobile apps are optimized for browsing
+- Easier on mobile devices to browse and select content than to input data
+- Rich set of patterns around browsing through content
+
+Lists
+
+- Most frequently used pattern for organizing content on handheld
+- Tapping content item in a list drills down a level in the hierarchy
+  - Sometimes may also launch a modal or popup
+- Work in conjunction with tab bars to provide access to multiple screens
+- Can be finite or allow infinite scrolling
+  - Elegant solution as long as load time is quick
+
+Grids
+
+- Used to organize content into regular rows and columns
+- Gallery views are often used to present media objects
+- Can be challenging to understand how to navigate
+- Most pages with grids as primary navigation use pageless, sometimes infinite scrolling to expose more grid objects
+- In landscape orientation, grids usually scroll horizontally
+- Generally no zoom in/out on grids
+
+Content Carousels
+
+- Live within a single screen layout but use swipe gesture to navigate between different context objects
+- Often spaced so they bleed off the edge of a screen
+- Proper carousels should wrap from end to beginning
+- Only one carousel should be employed on screen and should take most prominent position
+
+Swimlanes
+
+- Mashup of carousel with grid
+- Verical stack of carousels, each of which can be scrolled horizontally independant of others
+- Example: Netflix
+- Typically used for finite lists but can be used with infinite scroll as well
+- Swimlanes should never auto-advance
+
+Cards
+
+- Rich media, content-centric interactions
+- Self-contained interactive object combining media, tex,t web links, and social actions like commenting, sharing, tagging, and adding media
+- Most often displayed in a scrolling vertical list, but works in grid, carousel, and swimlane layouts
+
+### Navigation and Tool Bars
+
+- Bars are primary mechanism for navigating to different functional and content areas of handheld mobile apps
+- Narrow horizontal regions at top or bottom of screen consisting of tab--like or button-like controls with either icons or text labels
+- Major operating systems gravitated towaard a flat visual style
+
+Tab Bars
+
+- Contain a set of text/icon buttons
+- Tapping a tab switches to a different list or grid view in the main content area
+
+![picture 1](https://s2.loli.net/2023/02/01/hAny5cj8OQPFMdo.png)  
+
+More controls
+
+- Narrow aspect ratio of most screens limits the practical num of controls in a bar to no greater than 5
+- `More...` control is a tab or action bar control that gets around limited screen real estate
+- Opens a full screen modal popup
+
+TabCoursels
+
+- Tabs are shown in tab bar as usual but extend off edges of the screen
+- Selected tab is highlighted in the bar
+
+Nav bars and action bars
+
+- Nav bars at top of screen provide a way to navigate a list or grid hierarchy
+- Back button left and title of current list grid of content screen in the center
+- Usually navigation is placed at top of screen
+
+Tool bars and PAlettes
+
+- Tool bars contain buttons that execute functions on the current or selected content
+- ios apps place action buttons on the right side of the nav bar
+- Authoring or editing apps often replace bottom-of-screen tab bar with tool bars
+- Tool palettes usually use icons to access tools to operate on a document. These make heavy use of popup control panels
+
+Vertical tool bars and palettes
+
+- Run along the left or right edge of the screen
+
+Tool Carousels
+
+- Popular with image processing apps
+![picture 2](https://s2.loli.net/2023/02/01/FTqtpjwbi6P15K7.png)  
+- Useful for taming complexity of an application
+
+Menu Bars: Avoid in Mobile
+
+- Desktop style menu bar interaction is not expected on a tablet
+- Most of functionality is hidden in the menus
+- Approach that uses both a tool bar AND a tool carousel can accomplish most of what a menu bar can do
+
+### Drawers
