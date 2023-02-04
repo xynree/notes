@@ -192,3 +192,37 @@ Menu Bars: Avoid in Mobile
 - Approach that uses both a tool bar AND a tool carousel can accomplish most of what a menu bar can do
 
 ### Drawers
+
+- Drawers provide access to a vertical list of navigational elements, similar to tasks
+- Hide in a panel that lives in a lyer under the main content area
+- Also called the hamburger menu
+- Slides the content area horizontally to reveal the drawer under it
+
+Scondary-action drawers
+
+- Can be used to replace a navigational tab bar or to interact with a secondary set of objects
+- Usually slide open from the left
+
+Double Drawers
+Use both a left hand drawer for views and a right hand drawer for messages
+
+Item-Level Drawers
+
+- Move concept of slide-to-reveal drawers into individual ites in a list
+- Sliding an item to the left or right reveals a tool bar under the item, avoiding the need for a tool bar at the top or bottom of the content area
+  - Difficult for users to discover without a visual cue
+  - Swiped item can be obscured when the drawer is open
+  - More standard gestures may consequentailly become impossible
+
+Drawer Behaviors to Avoid
+
+- Limit the number of animated screen transitions
+
+Drawer Controversy
+
+- People claim that drawers hamper user engagement by hiding functionality
+- Benefits of drawer = cleaner main interface and ability to make functions a swipe and ta paway
+- Drawers work well for apps where you expect users to be constantly using many functions
+- Apps that are only casually used may be best suited for tabs
+
+### Tap-to-reveal and direct manipulation
