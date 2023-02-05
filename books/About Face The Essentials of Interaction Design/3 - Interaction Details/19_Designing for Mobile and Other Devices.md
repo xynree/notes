@@ -372,3 +372,115 @@ General Design Principles
   - Limit the scope
   - Balance naivation with display density
   - Minimize input complexity
+
+Don't Think Of Your Product As a Computer
+
+- USers will approach your product with specific expectations about what the product can do, or with very few expectations
+- Don't bring the baggage of the computer to a simpler device like a camera or oven
+- Designers can easily forget that they are not designing software for computers
+  - Most assumptions are not valid for embedded devices
+- Idioms that are accepted on a PC are inappropriate for embedded devices
+
+Integrate Hardware and Software Design
+
+- Embedded systems often benefit from custom hardware
+- Hardware based navigation and input must often take the place of onscreen equivalents
+- Hardware and software need to combine to create a compelling experience
+
+Let Context Drive the Design
+
+- Embedded systems are often used in a particular context that pose specific restraints
+  - Ex: car navigation controls
+- Design of embedded systems must match context of use
+
+Use Modes Judiciously
+
+- Users are easily confused by modal behavior
+- Devices have smaller displays and limited input
+- Changing modes is hard
+- Limit the number of modes - they should result naturally from situational changes in context
+  - Ex; when calls are received vs calls turminated
+
+Limit the Scope
+
+- Avoid temptation to turn systems into general purpose computers
+- Many devices share info with desktop systems. Approach the design of these as satellites of the desktop
+
+Balance Navigation with Display Density
+
+- Every pixel is significant in design of display-constrained embedded systems
+- Tradeoff between clariy of info and complexity of navigation
+- Flatten info hierarchy if possible
+- If not, develop a simple hierarchy of information
+
+Minimize input complexity
+
+- Most embedded systems have simplified inputs, meaning that input is slow and difficult for users
+- Public kiosks also are a disease vector
+- Virtual keys should be large
+- Avoid idioms that involve dragging
+
+Designing for Single-PUrpose Handheld Devices
+
+- think about how the device will be held and carried
+- Determine whether device will support one handed or two handed operation
+- Avoid pluralized and pop=up windows
+
+### Designing for Kiosks
+
+- Infrequent users with a specific goal in mind or no goal at all
+- No access to keyboards or mice
+- Public environment full  of noise
+- May be used in tandem
+
+Transaction versus Exploration
+
+- 2 catgories of kiosk: transactional and explorational
+- Transactional: tightly scoped transaction or service
+  - ATM, ticketing machines, gas pumps
+- Explorational
+  - Found in museums or info display at a mall
+  - Provide additional information and a richer UX for people who come to see ehibits
+  - Interface should be pleasing and easy to navigate
+
+Interaction in a Public Environment
+
+- Need to be placed in an optimal location
+- Think about account security issues
+- How many kiosks to install? Depends on context
+- Consider use of sound and design for differently abled people
+
+Managing Input
+
+- Make sure click targets are large enough
+  - 20mm click target is the typical minimum
+  - Should be increased when in a rush
+  - Use soft-keyboard input sparingly
+  - Avoid drag and drop
+
+Designing for 10-foot interfaces
+
+- TV based interfaces are often 10 foot interfaces
+- Lists, grids, carousels and swimlanes map well to 10 foot interfaces
+- Text and navigable content needs to be displayed in a larger size
+- Keep onscreen navigation simple
+- Keep control integration in mind
+- Remotes should be as simple as possible
+- Focus on user goals and activities, not product functions
+
+Designing for Automotive Interfaces
+
+- Minimize time user hands are off the wheel
+- Enfoce consistent layout froms screen to screen
+- Use direct control mapping
+- Choose input mechanism carefully
+- Differentiate physical design of controls clearly so they can be managed by touch
+- Use strong contrasts in visual design of displays and shallow visual hierarchy
+- Mode switching should be simple and predictable
+- Provide audible feedback
+
+Designing for Audible Interfaces
+
+- Navigation is critical because it is easy to get lost in a tree of functionality with no means of visualization
+- Organize and name functions according to mental models
+- Always signpost currently available functions
