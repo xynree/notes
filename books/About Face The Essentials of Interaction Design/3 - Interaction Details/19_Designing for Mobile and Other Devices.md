@@ -226,3 +226,149 @@ Drawer Controversy
 - Apps that are only casually used may be best suited for tabs
 
 ### Tap-to-reveal and direct manipulation
+
+- Main difference between mobile apps and desktop apps: Ability to use fingers to manipulate onscreen objects
+
+Tap-to-reveal controls
+
+- Tap an object and then the manipulation tools are revealed
+- Streaming apps use tap-to-reveal for controls that are normally hidden during playback
+
+Direct Manipulation Controls
+
+- Some apps replace sliders and other indirect manipulation idioms with gestures on the object being edited
+- Requires some discovery but quick to become seocnd nature
+
+## Searching, Sorting and Filtering
+
+- Key user activity on mobile apps - arguably the most important mobile activity
+
+Implicit sorting versus explicit searching
+
+- Mobile apps are optimized for brosing
+- We can use that behavior to preempt user nead to build search queries
+  - We can track the kinds of things user has viewed, like or purchased in the past
+  - Use to build recommendations
+
+Building Search Queries
+
+- User will always need to search for something specific
+- How to allow sufficient expression of search terms with minimum of data entry?
+  - Voice search
+    - Not always reliable
+  - Auto-complete
+  - Tap-ahead
+    - Allow users to take auto-completed term options, load and run the query
+  - Recent/Frequent Searches
+    - Should also support tap ahead
+  - Auto-sugest
+    - Use fuzzy matching techniuqes to provide spell-corrected, controlled-vocab and synonym options in the option list
+  - Categorized Suggestions
+    - Can show suggestions across multiple categories
+
+Sorting and Filtering
+
+- Many interfaces merge sorting and filtering into a single set of controls
+- Don't force users to refresh UI when choosing between the interfaces
+- Place the filters button in an obvious, visible place and allow users to always see what is currently selected in the filters.
+
+### Welcome and Help Screens
+
+- Welcome screens provide guidance on what the important activities are in an app and how to perform them
+- Help provides the same info on demand when the user requests it
+
+Guided Tours
+
+- A carousel of cards which contain text and images or video describing use of app functions
+- Employed at first use and after a major release
+- Should allow users to exit the tour from any card or screen
+
+Overlays
+
+- Covers entires screen with a transparent layer on which instructions employing arrows to indicate gestures or controls are displayed
+- Tapping screen dismisses the overlay
+
+Tooltip Overlays
+
+- Tooltip-like display of all primary functions on a single overlay screen
+- Used often in context of complex authoring apps
+- Best used not as a welcome but instead a help screen
+
+### Multi-Touch Gestures
+
+Tap to Select, Activate or Toggle
+
+- Tap is used to select objects and toggle the activation state of controls
+- Tapped items should get a selection highlight or activation/deactivation state or animation
+
+Tap-and-hold
+
+- Falling out of favor - typically used to open a contextual pop-up menu
+- Not very discoverable
+- Instead, use a visible menu control on the object
+
+Drag to Scroll
+
+- Fundamental direct manipulation gesture
+- Can be used to scroll lists or reorder objects in a list
+- Horizontal dragging can scroll a carousel or swimlane or open a drawer
+
+Drag to Move
+
+- Dragging can be used to move or copy an object from one list, pane or container to another, or to move object within a canvas or grid
+
+Drag to Control
+
+- Can also be used to control knobs, switches, sliders, and contextual touch controls
+
+Swipe up/down
+
+- USually synonymous with dragging up
+- Swiping a list or grid up causes it to continue scrolling with some momentum
+
+Swipe Left
+
+- Synonmous with dragging left
+- Can also open a right hand drawer or close a left handd rawer
+  
+Swipe Right
+
+- Safari uses this to navigate like the back button
+- Chrome uses a swipe right to delete browser tabs in edit mode
+
+Pinch in/out
+
+- Used to shrink or zoom objects physically
+- Or can use a semantic zoom: zoom out or up one level in the hierarchy in a set of nested structures
+
+Rotate
+
+- Can be used to actuate knob controls, but knobs should also support drag actions
+- Also used to rotate objects like a selection of pixels
+- A bit akward to carry out
+
+Multifinger Swipe
+
+- Not very discoverable and may interfere with OS-level gestures
+- Best left unused or reserved for special needs.
+
+### Inter-App Integration
+
+- Standalone apps do not always foster integration of functionality and data between their ecosystem
+- Some apps like IFTTT allow apps to be wired together with customizable rules
+
+### Other Devices
+
+- Interaction for device-embedded interfaces requires special attention to create an experience that coexists with activity of real world happening around the product
+
+General Design Principles
+
+- Examples: smart appliances and medical informatics
+- Basic principles:
+  - Dont' think of product as a computer
+  - Integrate hardware and software design
+  - Let context driv ethe design
+  - Use modes sparingly
+  - Limit the scope
+  - Balance naivation with display density
+  - Minimize input complexity
