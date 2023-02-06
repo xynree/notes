@@ -484,3 +484,6 @@ Designing for Audible Interfaces
 - Navigation is critical because it is easy to get lost in a tree of functionality with no means of visualization
 - Organize and name functions according to mental models
 - Always signpost currently available functions
+- Provide a way to go back one step and return to top level
+- Always provide a means to speak to a human
+- Give user enough to respond
