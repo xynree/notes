@@ -55,3 +55,37 @@ Hyperlinks
 - Traditionally, selection controls do not directly result in actions: instead they require an imperative control to activate
 - In cases where it is desirable to allow user to make selections before commiting to an action, there should be an explicit control (button)
 - In cases where users would benefit from seeing immediate impact and actions are easy to undo, selection controls can double as an imperative control
+
+Check Boxes
+
+- One of the earliest visual control idioms
+- Good for presenting a single, binary choice or for selecting among several choices in a short list
+- Strong visual affordance for clicking
+- Checkbox is primary a text-based control, same weaknesses as menus
+- Well-writtten text can make check boxes clearer but forces users to slow down to read it
+- Traditionally square
+- Don't make them diamond or round (confuses them with radio buttons)
+
+Toggle Buttons
+
+- Graphical approach to a unitary checkbox
+- Let icon stay in pushed-in state when clicked
+- Appropriate for modeless interactions
+- Use tooltips for ambiguity
+
+Avoid state-switching buttons
+
+- Example: collapsing play and pause into the same button
+- Problem: control could be interpreted as indicating the player's state (puased or playing)
+  - For music players, there is extra context in hearing music, but many interfaces do not have explicit confirmations
+- Solution: Spell out the verb: Play or Pause in text on the button
+
+Radio Buttons
+
+- Mutually exclusive: When one option is selected, previous option automatically deselects
+- Radio buttons always come in groups of two or more
+- One radio button in each group must be selected
+- Use the same amount of space on screen as check boxes
+- Suited to a pedagogical role: Justified in infrequently used dialogs
+- Dropdowns are usualy better in sovereign apps for daily users
+- Radio buttons are almost always round
