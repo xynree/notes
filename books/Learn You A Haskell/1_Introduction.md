@@ -13,3 +13,8 @@
 - Has type inference: most types are inferred
 - High level concepts that are elegant and concise
 - Work on Haskell began in 1987, stable version released in 2003
+
+## What you need to dive in
+
+- get `ghci`
+- load functions using `:1 nameofhaskelfile`

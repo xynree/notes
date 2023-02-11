@@ -149,7 +149,7 @@ Entering Data into a List
 
 Dropdown and Popup Lists
 
-- Take the place of astack of radio buttons
+- Take the place of a stack of radio buttons
 - Current selection shown when the pop up list closes
 - Focus on selecting objects rather than executing commands
 - Can sometimes affect display if used as part of live search filter
@@ -169,3 +169,43 @@ Tree Controls
 - Only use when what the tree represents can be naturally thought of as a hierarchy
 
 ### Entry Controls
+
+- Enable users to supply information or set a value in an application
+- Basic entry control: Text Edit Field
+- Represent nouns to the application
+
+Bounded and Unbounded Entry Controls
+
+- Bounded entry control: Control that restricts available set of values that user can enter
+- Unbounded entry field: Will accept any character typed into it
+- Bounded controls should be used wherever bounded values are needed
+  - Should communicate the acceptable data boundaries
+  - A field that rejects user input after being entered is not a bounded control - it is a rude control!
+
+Spinners
+
+- Common form of numeric entry control that permits data entry using mouse, keyboard or finger, called Stepper on ios
+- ![picture 2](https://s2.loli.net/2023/02/12/uhTwWCEaNrtev7R.png)  
+- Spinners blur the difference between bounded and unbounded controls
+
+Dials and sliders
+
+- idioms from mechanical age metaphors of knobs and levers
+- Dials are space efficient
+- Good at providing visual feedback about settings
+- Dials can be difficult to manipulate - sliders can be better if there's enough space for them
+- Implementing a dial should allow linear input in two dimensions: Clicking and moving up or right vs moving down or left + velocity
+- Dials are best used in specialized sovereign applications. Popular with audio software
+
+Thumbwheels
+
+- Variant of a dial, looks similar to a scrollwheel
+- Good for 3D applications
+
+Other bounded entry controls
+
+- 2D graphs for interfaces, complex diredt manipulation interfaces
+- Control surfaces often provide a mechanism for visual feedback
+- Most appropriate for situations where users attempt to express themselves with a number of variables and are okay with developing a complex idiom
+
+Unbounded Entry: Text Edit Controls
