@@ -89,3 +89,83 @@ Radio Buttons
 - Suited to a pedagogical role: Justified in infrequently used dialogs
 - Dropdowns are usualy better in sovereign apps for daily users
 - Radio buttons are almost always round
+
+Switches
+
+- Switch control is a more compact version of two radio buttons used together
+- Can also be seen as a check box, with states labeled explicitly
+- Has two states: on and off, that are on either side of the switch
+
+Combo Icon Buttons
+
+- replace bank of icon buttons with a dropdown list of icons
+- User must click and hold icon button to bring up the menu (adobe palette tools)
+- Can pack a lot of info into a compact control
+- For frequent users
+- Idiom is clear after it is discovered or demonstrated
+
+List Controls
+
+- Allow users to set from a finite set of text strings, representing a command, object, or attribute
+- Also known as "list boxes" or "listviews"
+- Good tool to simplify interaction
+  - Eliminate possibility of inputting an invalid selection
+- Drop down can be considerred a variant of list control
+- Barrel rendering for alarms (iOs)
+- Try out using the dropdown control with an icon, or with a preview
+
+Earmarking
+
+- Users will select items ina list control as input to some function
+- Occassionally list control are used to select multiple icons
+- List control selection is much wewaker idiom for multiple selection
+- When lists are long and can scroll off screen use a different idiom: Checkbox
+- Adding a checkbox to list control helps with displaying mutual exclusivity "earmarking"
+
+Dragging and Dropping from lists
+
+- List controls can be used with direct manipulation
+- Drag items can help users gather items into a set
+- Provide two lists: Available items and chosen items
+
+Ordering Lists
+
+- Sometimes users need to reorder lists
+- Many applicatons offer automatic sort
+- For advanced users: Offer custom sort
+- Also make sure the application remembers settings from session to session
+
+Horizontal scrolling in lists
+
+- Horizontal scrolling is a pain for users and should only be allowed in large tables like spreadsheets
+- Search for alternative solutions:
+  - Shorten entries, wrap text to next line, enter aliases for longer entries, graphical entries, tooltips, widen control, rearrange window
+- If no alternative: Wrap text to next line, and indicate that it is diferent from other entries, or truncate with the ellipsis
+
+Entering Data into a List
+
+- Edit in place is a common idiom
+- Edge case: adding new entry to a list
+
+Dropdown and Popup Lists
+
+- Take the place of astack of radio buttons
+- Current selection shown when the pop up list closes
+- Focus on selecting objects rather than executing commands
+- Can sometimes affect display if used as part of live search filter
+
+Combo Boxes
+
+- Combination of list box and an edit field
+- ![picture 1](https://s2.loli.net/2023/02/11/jY6SbxdMBFD4VrL.png)  
+- Clearly differentiate between selection and entry part, minimizing confusion
+- By nature a single-selection tool
+
+Tree Controls
+
+- List views that present hierarchical data
+- Sideways tree of visually connected branches
+- Can be problematic for users
+- Only use when what the tree represents can be naturally thought of as a hierarchy
+
+### Entry Controls
