@@ -209,3 +209,56 @@ Other bounded entry controls
 - Most appropriate for situations where users attempt to express themselves with a number of variables and are okay with developing a complex idiom
 
 Unbounded Entry: Text Edit Controls
+
+- Primary unbounded entry control  = text edit
+- Often used as data-entry fields in database apps, as option entry fields or as entry field in a combo box
+- Text edit control can be designed to reject nonalphabetic characters and disallow invalid characters
+
+Validated Entry Controls
+
+- When unbounded text-entry is provided but filed only accepts entries of a certain form, you may need to help users construct a "valid" entry
+- Give users generous feedback as close to real-time as possible, so they can catch errors immediately
+- Another way is to make validated entry controls distinct from nonvalidated controls
+
+Active and Passive Validation
+
+- When a control actively rejects keystrokes during entry this is "active validation"
+- It must tell the user it has rejected the stroke and why it occurred
+- Sometimes the range of data cannot validate until user has completed his entry
+- If control waits until user finishes entering data before editing the value: passive validation
+- Try using a debounce for validation processing to about half a second
+
+Hints
+
+- Popup text that behaves like a tooltip, explaining range of acceptable data for a validation control
+
+Handling Out of Bounds Data
+
+- Do not allow users to type invalid data, but consider that they may enter data that is close but not necessarily invalid
+
+Avoid Text Edit Controls for Output
+
+- If there is text data to output, use a text dispaly control, not a text edit control
+
+### Display Controls
+
+- Display controls are used to display and manage the visual opresentation of information onscreen
+- Examples: Scrollbars, screen splitters
+- These are controls that manage how objects are displayed visually, and also display static, read-only information
+
+Text Controls
+
+- Displays a wirtten messasge at some location
+- Prblem: Used often where edit controls should be and vice versa.
+- In many cases where app displays an editable value, it should do so in an editable field so that the user can click it and change it directly.
+  
+Scrollbars
+
+- Can be3 overused and underexamined
+- Provides useful context about where you are in the window
+- Best scrollbars use thumbs that are proportional to the percentage of document that is visible
+- Scrollbars for pages of text should also show total pages, page number, thumbnail
+- Limitations are found when using scrollbars in inappropriate situations: such as for calendar controls
+- Alternatives to scrollbars: Document navigator, outlines
+
+Splitters
