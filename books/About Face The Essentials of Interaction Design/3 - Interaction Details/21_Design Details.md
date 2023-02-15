@@ -262,3 +262,70 @@ Scrollbars
 - Alternatives to scrollbars: Document navigator, outlines
 
 Splitters
+
+- Tools for dividing a sovereign application into multiple related panes
+- Movable splitters should advertise pliancy with cursor hinting
+- A splitter should be unable to be moved in a way that makes the pane's contents unusable
+- When panes need to collapse, a drawer might be a better idioma
+
+Drawers and Levers
+
+- Drawers are panes that can be opened and closed with a single action
+- Can be used in conjunction with splitters
+- Must have a handle control to click open and close. This control should be visible at all times
+- Good place to put controls and functions that are less frequently used but most useful in the context of the application's main work area
+- Do not cover the main work area the way a dialog does
+- Property details, searchable lists of objects or components, and history are good candidates for drawers
+- On mobile: Horizontally sliding drawers that take users to different functional screens
+
+## Dialogs
+
+- Pop-up windows superimposed over the application's main window
+- When finished, user can dismiss or accept dialog
+- In era of modeless controls, a hallmark of poor interaction design is a user interface consisting primarily of control-laden modal dialogs
+- Primary actions and controls for an application belong in its main screen or window
+
+### Appropriate Use of Dialogs
+
+- Useful to take users out of the flow and force them to focus on particular questions
+- Appropriate for functions or features that are out of the normal course of things
+- Good for actions that make immediate and major changes to the application state
+- Prevents features from being invoked accidentally
+- A robust undo function should also be provided
+- Well suited for concentrating information related to a single subject, appropriate for organizing controls and info
+- Effective for users who are still learning an application
+- Dialogs must be compact and powerful, speedy and smooth
+
+### Basic Dialog Interactions
+
+- Most dialogs contain a combination of informative text, interactive controls, and associated text labels
+- Dialog should appear on the topmost visula layer so that it is obvious to a user
+- Should have a title that clearly identifies its purpose. Use verbs to show function's action
+- Most dialogs also have a terminating Cancel command
+
+### Modal and modeless dialogs
+
+- Modal dialogs: Owner application cannot continue until dialog is clkosed. Stops all proceedings. All controls and objects on surface of app are deactivated
+- Modal dialogs are easier for users and designers to understand.
+- Rarely misunderstood
+- Operate on the entire application or the entire active document
+- Because modal dialogs stop only their owning applications, they are described as "application-modal"
+- Also possible to make a "system-modal" dialog that brings every app to a halt. Howerver, this should not happen
+- Modeless dialogs are less common. When it opens, parent app continues without interruption
+- Does not stop the proceedings, even though they have terminating commands. Can be difficult to understand
+- Sometimes can drag objects between main windows and modeless dialogs. Makes them useful for tool or object palettes
+
+### differentiating modla nd modeless dialogs
+
+- When using both dialogs in an application:
+- Modal dialogs must include 1+ terminating commmands
+- Modeless dialogs should not use terminating command buttons. Instead they should use the Close control in its title bar
+- Modal dialogs should not use close controls in their title bars
+
+### Issues with modal dialogs
+
+- Avoid changein the terminating buttons from Cancel to Apply or from Cancel to Close depending on whether or not user has taken an action
+- These labels should never change
+- The cognitive strength of modal dialogs is their rigidly consistent OK and Cancel buttons
+
+### Issues with modeless dialogs
