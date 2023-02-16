@@ -329,3 +329,84 @@ Drawers and Levers
 - The cognitive strength of modal dialogs is their rigidly consistent OK and Cancel buttons
 
 ### Issues with modeless dialogs
+
+- Often implemented awkwardly
+- Few established behavioral conventions. Confusion arises because users are familiar with their modal siblings
+- Modeless dialogs can be more challenging to design and implement
+- Frequently have several buttons that immediately invoke various functions
+- Dialog should not close when one of those buttons is clicked
+- Should only close when window close is clicked
+- Must be conservative of pixels
+
+### Modeless dialogs and Undo
+
+- User doesn't conditionally configure changes in anticipation of an Execute command in the same
+- No concept of "Cancel all my actions"
+- Proper idioms for this is Undo function
+- Consistent terminating action for modeless dialogs: Close
+- If close buton actuates a function in addition to closing dialog, you have created a dialog that should follow the conventions for a modal idiom instead
+
+### Modeless dialogs and sidebars
+
+- Any modeless dialog that is intended to provide persistent support to activies in the main window is a good candidate for a sidebar control pane instead
+
+## Five Purposes of Dialogs
+
+- We should examine dialogs from a more goal-directed point of view
+
+### Property dialogs
+
+- Allow users to view and change settings or attributes
+- Modifies current selection, but also used to set application global properties
+- Thpically modeless
+- When modifying properties of a selection, these dialogs are often more useful as a task pane or sidebar rather than as a standard dialog
+
+### Function dialogs
+
+- Usually launched from a menu
+- Frequently modal dialogs
+- Control a single function such as printing modifying numbers of database records, or spell checks
+- Often allow users to configure the details of the action's behavior
+  - ex: print dialog
+- This technique combines 2 functions: Configuring function and invoking it
+- Often better to make these two functions separately accessible
+
+### Process dialogs
+
+- Launched at application discretion rather than by a user
+- Indicate application state, loading, etc. Informs users when application is unresponsive
+- Many apps rely on active wait-cursor hinting
+- Should make clear to users:
+  - That a time consuming process is happening
+  - The things are normal
+  - How much more time it will take
+  - How many objects need to be operated on
+  - How to cancel the operation
+- Best way to show process is by using animation in the dialog to give the user the sense that the computer is doing something
+- Because a dialog is a separate room, designers should question whether the process reported by a dialog is really a separate frunction from the main window
+- If function is integral part of main window, the status of function should b shown in the main window
+
+### Notification DIalogs
+
+- Report important messages that are the result of triggered events or communications from other users
+- Alarms, appointments, and emial or IM notifications
+- Mobile supports heavy use of notifications
+- Notification centers: permit viewing notifications after the fact
+- Often appear as small pop-up windows or drawers in the periphery of screen
+- Leave a marker or badge in the notificatioin center to alert the user that something needs attentionn
+- Notification should be clearly, noticeably, and persistently marked in the interface
+
+### Bulletin Dialogs
+
+- Launched, unrequested by the application
+- Errors, alerts and confirmations
+- Reports on or requires a user decision about the application's internal state
+- Suffers from frequent misuse
+- Ex: Error dialog. Make sure not to blame the user
+- Normally application modal: Stop further process of app until user issues a terminating command. It blocks the rest of the aplication
+- It is possible for a bulletin dialog to popup and then dismiss after a delay. These are transitory
+  - Sometimes used for error reporting
+- Errors should pause application or at the very least maintain presence
+- If something is worth saying with a dialog, it's worth ensuring that the user definitely gets the message
+- Transitory notifications should never be used in the role of error reporting or for confirmation
+- We should aim to remove bulletin dialogs in favor of more helpful interaciton patterns
