@@ -386,7 +386,7 @@ Drawers and Levers
 - Because a dialog is a separate room, designers should question whether the process reported by a dialog is really a separate frunction from the main window
 - If function is integral part of main window, the status of function should b shown in the main window
 
-### Notification DIalogs
+### Notification Dialogs
 
 - Report important messages that are the result of triggered events or communications from other users
 - Alarms, appointments, and emial or IM notifications
@@ -410,3 +410,42 @@ Drawers and Levers
 - If something is worth saying with a dialog, it's worth ensuring that the user definitely gets the message
 - Transitory notifications should never be used in the role of error reporting or for confirmation
 - We should aim to remove bulletin dialogs in favor of more helpful interaciton patterns
+
+## Managing property and function dialogs
+
+- Function dialogs can easily become crowded with controls, options, etc
+
+### Tabbed Dialogs
+
+- Longrunning standard
+- Allows app objects with many properties to have rich property dialogs
+- Tabs must have meaningful rational for being together
+- Tabs in a dialog should be organized to provide increased depth or increased breadth on a well-defined topic
+- Stacked tabs: having many different tabs for functions
+- Stacked tabs illustrate the axiom of UI design: all idioms have practical limits
+  - Better alternative: use several separate dialogs with fewer tabs on each
+
+### Expanding Dialogs
+
+- Dialogs unfold to expose more controls
+- Dialog shows a button marked More or uses a downpointing arrow icon that toggles when dialog has been expanded
+- Usually a good idea for dialogs to remember what mode it was used in the last time it was invoked
+
+### Cascading dialogs
+
+- Idiom where controls (usually pushbuttons) in one dialog summon another dialog in a hierarchical pile
+- Not used much anymore
+- Hard to know what is going on with cascading dialogs
+
+## Eliminating Errors, Alerts and Confirmations
+
+- Bulletin dialogs represent often problematic digital product interactions
+- In many cases button dialogs can be replaced with other interactions
+
+### Error Dialogs
+
+- Often historically misused, poorly written, unhelpful, rude
+
+What's Wrong with Error Dialogs?
+
+- Users don't need to be told they've made an error
