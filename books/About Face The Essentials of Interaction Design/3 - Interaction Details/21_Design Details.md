@@ -449,3 +449,61 @@ Drawers and Levers
 What's Wrong with Error Dialogs?
 
 - Users don't need to be told they've made an error
+- Instead, they need help avoiding errors and their consequences
+- Apps have a responsibility to try and make things right for users
+- Assumption that users need to be told when they are wrong is false in most circumstances
+- Most error messages just inform users of application's inability to work flexibly and are an admission of stupidity on the app's part
+
+Whose mistake is it anyway?
+
+- Actually, most error messages just report when application gets confused
+- Alternatives: rich modeless visual feedback, provide more signals, inform without stoppping proceedings
+
+Error Messages Dont' Work
+
+- Don't actually prevent users from making errors
+
+How to eliminate error messages
+
+- Redesign applications so they are less sucesptical to the problem
+- When input comes from a human, the software should assume the input is correct
+- Real world is more relevant and important than what the application thinks
+
+Making errors impossible
+
+- By using bounded widgets (spinners, drop down list boxes) for data entry we can prevent invalid values
+- Make application smart enough so that it no lonnger needs to make unnecessary demands
+
+Aren't there Exceptions?
+
+- Not many exceptions
+- Error dialogs should be polite, illuminating, and helpful
+- Must give users the info ithey need to make an appropriate plan to solve application's problem
+
+### Alerts and Confirmations
+
+Alerts: Announcing the obvious
+
+- Application should either have the courage of its convictions o should not take action without the user's direct instruction
+- Rationale for alerts is to keep users informed, but it should not come at the expense of smooth interaction flow
+
+How to Elminate Alerts
+
+- Software shoud have visual indicators built into its main screens to make status information immmediatelya vailable to users if they desire it
+
+Confirmations: The dialog that cried wolf
+
+- Confirmations "pass the buck" to users
+- Confirmations only work when they are unexpected
+  - SHould not be shown in routine places
+
+How to Eliminate Confirmations
+
+- Do , don't ask, but make sure that the user can undo an awction
+- Make all actions reversable
+
+## The Devil Is In the Details
+
+- Frustrating controls and dialogs can lead to constant low-l;evel annoyance
+- Make sure the detailed interactions of product support user goals
+-
