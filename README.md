@@ -9,10 +9,10 @@ This repository compiles all the notes on various subjects I've accumulated over
 │   ├── dsa
 │   │   └── DSA With Javascript
 │   ├── fundamentals
+│   │   ├── Structure and Interpretation of Computer Programs
 │   │   └── CS:APP
 │   └── software design
 │       ├── Software Design For Flexibility
-│       ├── Structure and Interpretation of Computer Programs
 │       └── The Pragmatic Programmer
 ├── ee
 ├── math
