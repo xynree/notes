@@ -29,26 +29,15 @@ This repository compiles all the notes on various subjects I've accumulated over
 │   │   │   └── Beej's Guide to C Programming
 │   │   ├── Golang
 │   │   │   └── go_tour
-│   │   │       ├── 1_Basics
-│   │   │       ├── 2_Methods and Interfaces
-│   │   │       ├── 3_Generics
-│   │   │       └── 4_Concurrency
 │   │   ├── Haskell
 │   │   │   ├── Get Programming with Haskell
 │   │   │   ├── Learn You A Haskell
 │   │   │   └── Programming in Haskell
-│   │   │       ├── Part 1 Basic Concepts
-│   │   │       └── Part 2 Going Further
 │   │   ├── Javascript
 │   │   │   ├── Grokking Simplicity
 │   │   │   ├── JSInfo
-│   │   │   │   ├── Additional
-│   │   │   │   ├── Browser
-│   │   │   │   └── The Javascript Language
 │   │   │   ├── Mostly Adequate Guide to Functional Programming
 │   │   │   ├── Thinkful Bootcamp
-│   │   │   │   ├── Mock Interviews
-│   │   │   │   └── Module Notes
 │   │   │   └── Typescript
 │   │   ├── Python
 │   │   │   └── PY4E
@@ -66,8 +55,5 @@ This repository compiles all the notes on various subjects I've accumulated over
 │       └── vscode
 └── ui:ux
     ├── About Face The Essentials of Interaction Design
-    │   ├── 1 - Goal Directed Design
-    │   ├── 2 - Designing Behavior and Form
-    │   └── 3 - Interaction Details
     └── Design Systems Handbook
 ```
