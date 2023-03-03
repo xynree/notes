@@ -57,3 +57,13 @@
 - `nub, delete,union,intersect,group` have generic counterparts called `nubBy, delteBy` etc. the By functions take an equality function and compare them using that function.
 - Lists can be compared but are compared lexographically
   - Can use `sortBy` to compare in a specific way
+
+## Data.Char
+
+- Exports functions that deal with characters
+
+- is___ functions: checks whether a character is a specific type of character. Includes `isControl`, `isSpace`, `isLower`, and other helper functions
+  - All have type signature `Char -> Bool`
+- `Ordering` `GeneralCategory`  types: describes results that can arise from comparing two elements
+- `digitToInt` `intToDigit` for hexadecimal: must be in ranges 0-9 and 'a-f'
+- `ord` `chr` functions convert to ASCII
