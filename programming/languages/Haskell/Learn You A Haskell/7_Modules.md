@@ -67,3 +67,28 @@
 - `Ordering` `GeneralCategory`  types: describes results that can arise from comparing two elements
 - `digitToInt` `intToDigit` for hexadecimal: must be in ranges 0-9 and 'a-f'
 - `ord` `chr` functions convert to ASCII
+
+## Making Our Own Modules
+
+- Sytax: module name, then specify functions to export
+
+```haskell
+
+module Geometry
+( sphereVolume,
+sphereArea,
+cubeVolume)
+where
+
+sphereVolume :: Float -> Float  
+sphereVolume radius = (4.0 / 3.0) * pi * (radius ^ 3)  
+  
+sphereArea :: Float -> Float  
+sphereArea radius = 4 * pi * (radius ^ 2)  
+  
+cubeVolume :: Float -> Float  
+cubeVolume side = cuboidVolume side side side  
+```
+
+- then to use module: `import Geometry`
+- Geometry.hs has to be in the same folder that the program is importing it is in
