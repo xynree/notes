@@ -63,3 +63,40 @@ data Person = Person { firstName :: String
 
 - If we use record syntax, we don't have to specify fields in proper order
 - Use record syntax when a constructor has several fields and it's not obvious which is which
+
+## Type Parameters
+
+- Value constructors can take some parameters and produce a new value
+- `data Maybe a = Nothin | Just a`
+- Maybe represents an option of either having nothing or having one of something
+- Another parameterized type: `Map k v` will map from one type to another as long as the type is part of the Ord typeclass
+- Haskell convention: Never add typeclass constraints in data declarations
+  - You'll have to put them into function type declarations anyway
+
+## Derived Instances
+
+- Type can be made an instance of typeclass if it supports some behavior
+- Typeclasses are less like classes and more like interfaces
+- Haskell can use `deriving` kyeword to make a type an instance of any of these typeclasses: `Eq, Ord, Enum, Bounded, Show, Read`
+- data Person = Person { firstName :: String, lastName :: String, age :: Int} deriving (Eq)
+  - Eq derivation allows us to compare two instances of a Person type now
+- Show/Read are for things that can be converted to or from strings
+  - Show: Convert values of our type to a string
+  - Read: Convert strings to values of our type
+
+## Type Synonyms
+
+- Type keyword uses type snonyms: `type String = [Char]`
+- Aliases types to different types: `type Phonebook = [(String,String)]`
+- Can also be parameterized
+
+## Recursive Data Structures
+
+- We can make types whose constructors have fields that are the same type
+- `data List a = Empty | Cons a (List a)`
+
+## Typeclasses 102
+
+- Typeclasses are like interface
+- Defines some behavior and then types that can behave that way are made instances of that typeclass
+- Once we have a typeclass we can make type instances of the class to get functionality with pattern matching
