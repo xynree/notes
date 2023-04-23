@@ -100,3 +100,15 @@ data Person = Person { firstName :: String
 - Typeclasses are like interface
 - Defines some behavior and then types that can behave that way are made instances of that typeclass
 - Once we have a typeclass we can make type instances of the class to get functionality with pattern matching
+
+### The Functor Typeclass
+
+- For things that can be mapped over
+implementation:
+
+```hs
+class Functor f where
+  fmap :: (a -> b) -> f a -> f b
+```
+
+- Defines one function `fmap` that takes a function from one type to another and a functor applied with one type, returning a functor applied with another type
