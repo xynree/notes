@@ -1,4 +1,4 @@
-# Getting Started With App Development
+# 1.1 - Getting Started With App Development
 
 - Swift was introduced in 2014 for writting apps for iOS and macOS
 - App platforms originally written in Objective-C
