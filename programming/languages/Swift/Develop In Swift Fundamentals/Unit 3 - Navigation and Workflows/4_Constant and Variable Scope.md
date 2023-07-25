@@ -21,7 +21,7 @@ if let name = name {
 
 ```swift
 
-init(name: STring, age: Int {
+init(name: String, age: Int {
   self.anme = name
   self.age = age
 })
