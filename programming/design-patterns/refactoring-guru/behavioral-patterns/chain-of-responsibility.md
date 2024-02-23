@@ -84,3 +84,11 @@
 - CoR is often used with Composite. When a leaf component gets a request, it may pass through the chain of all the parent components down to the root.
 - Handlers in CoR can be implemented as Commands - execute operations over the same context object. Or - the request itslelf could be a command object. You could execute the same operation in dfferent contexts within the chain.
 - CoR and Decorater has similar class structures. However Cor handlers execute operations independantly. Decorators extend the object behavior while keeping it consistent with the base interface.
+
+## Chain of Responsiblity in Typescript
+
+### Usage Examples
+- Relevant when code operates with chains of objects - filters, event chains, etc.
+
+### Identification
+- Behavioral methods of one group of objects that indirectly call the same methods in other objects that all follow a common interface.
