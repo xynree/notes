@@ -57,3 +57,4 @@
   - Common: use constructor
 - Impelment all methods of client interface in the adapter class
 - Use the adapter via the client interface
+

@@ -6,12 +6,9 @@ This repository compiles all the notes on various subjects I've accumulated over
 
 ```bash:contents
 ├── cs
-│   ├── dsa
-│   │   └── DSA With Javascript
-│   ├── fundamentals
-│   │   ├── CS:APP
-│   │   │   └── exercises
-│   │   └── Structure and Interpretation of Computer Programs
+│   ├── CS:APP
+│   │   └── exercises
+│   ├── Structure and Interpretation of Computer Programs
 │   └── software design
 │       ├── Software Design For Flexibility
 │       └── The Pragmatic Programmer
@@ -25,6 +22,16 @@ This repository compiles all the notes on various subjects I've accumulated over
 │   │       ├── FCC
 │   │       ├── FSO
 │   │       └── Local Storage
+│   ├── design-patterns
+│   │   └── refactoring-guru
+│   │       ├── behavioral-patterns
+│   │       ├── code-smells
+│   │       ├── creational-patterns
+│   │       └── structural-patterns
+│   ├── dsa
+│   │   └── DSA With Javascript
+│   ├── interview prep
+│   │   └── graph algos
 │   ├── languages
 │   │   ├── C
 │   │   │   └── Beej's Guide to C Programming
@@ -78,7 +85,6 @@ This repository compiles all the notes on various subjects I've accumulated over
 │   │   └── vscode
 │   └── system design
 │       └── system design primer
-│           └── system-design-topics
 ├── psychology
 │   └── abnormal psychology
 │       └── anxiety disorders
