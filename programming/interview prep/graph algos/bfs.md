@@ -29,3 +29,20 @@
 - Keyword: Transforming many connected nodes ---> Graph problem!
 - We can transform pixels one by one using a BFS algorithm
   
+## Time Complexity
+
+- Best Case: O(V + E)
+  - Occurs when target node found after only exploring a few edges and vertices
+  - Algorithm may terminate early without having to visit all
+  - O(V+E) : V is the # of vertices, E is the number of edges
+  
+- Average Case: O(V+E)
+  - Complexity is the same - linear time complexity proportional to sum of vertices and edges
+
+- Worst Case: O(V+E)
+  - The same.
+
+## Space Complexity
+
+- O(V) where V is the number of vertices in the graph
+- Typically we use a queue to keep track of the vertices which will be O(V).
